@@ -1,0 +1,34 @@
+{
+  "name": "lumen",
+  "owner": {
+    "name": "Siraj",
+    "email": "hello@siraj.ai",
+    "url": "https://siraj.ai"
+  },
+  "metadata": {
+    "description": "Quality-checked skills for writing, research, and building.",
+    "version": "0.2.58"
+  },
+  "plugins": [
+    {
+      "name": "lumen",
+      "source": "./plugins/lumen",
+      "description": "Six skills for writing, research, questions, diagrams, web builds, and skill-building — each checked for quality before the result reaches you.",
+      "version": "0.2.58",
+      "author": {
+        "name": "Siraj",
+        "email": "hello@siraj.ai"
+      },
+      "homepage": "https://lumen.siraj.ai",
+      "license": "SEE LICENSE IN LICENSE.md",
+      "category": "productivity",
+      "keywords": [
+        "writing",
+        "research",
+        "skills",
+        "validation",
+        "quality"
+      ]
+    }
+  ]
+}

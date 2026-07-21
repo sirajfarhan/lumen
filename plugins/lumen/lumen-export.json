@@ -1,0 +1,162 @@
+{
+  "pluginName": "lumen",
+  "canonicalPluginName": "lumen",
+  "packageVersion": "0.2.58",
+  "publicPluginIdentity": "lumen",
+  "target": "prod",
+  "harness": "claude-code",
+  "hostName": "Claude Code",
+  "connection": "bundled-https-client",
+  "runtimeProtocol": {
+    "id": "lumen-https",
+    "version": 2,
+    "transport": "https"
+  },
+  "stateSchemaVersion": 1,
+  "stableStateId": "lumen",
+  "state": {
+    "id": "lumen",
+    "schemaVersion": 1,
+    "storageDir": ".lumen",
+    "isolated": false
+  },
+  "legacyIdentityAliases": [
+    "lumen-validation"
+  ],
+  "updateContract": {
+    "instructionPull": {
+      "operation": "pull_skill_update",
+      "scope": [
+        "SKILL.md",
+        ".lumen-skill.json"
+      ],
+      "compatibility": "The runtime protocol, state schema, references, generated skill inventory, and public plugin identity must remain compatible."
+    },
+    "pluginUpgradeRequiredFor": [
+      "runtime client changes",
+      "reference changes",
+      "skill inventory changes",
+      "plugin identity changes",
+      "runtime protocol changes",
+      "state schema changes"
+    ],
+    "pluginUpgrade": {
+      "prepareOperation": "prepare_plugin_upgrade",
+      "verifyOperation": "verify_plugin_upgrade",
+      "restoreOperation": "restore_plugin_upgrade"
+    }
+  },
+  "generatedAt": "2026-07-21T12:25:31.907Z",
+  "skillInventory": [
+    {
+      "id": "lumen",
+      "name": "lumen",
+      "role": "orchestrator",
+      "version": "0.2.58",
+      "artifactType": "conversation",
+      "syncId": "lumen.skill.claude-code.lumen"
+    },
+    {
+      "id": "skillsmith",
+      "name": "skillsmith",
+      "role": "skill",
+      "version": "0.2.58",
+      "artifactType": "skill-package",
+      "syncId": "lumen.skill.claude-code.skillsmith"
+    },
+    {
+      "id": "writer",
+      "name": "writer",
+      "role": "skill",
+      "version": "0.2.58",
+      "artifactType": "writer-bundle",
+      "syncId": "lumen.skill.claude-code.writer",
+      "memoryContracts": {
+        "approvedProfile": {
+          "operation": "capture_lumen_preference",
+          "kind": "preference",
+          "scope": "skill",
+          "access": "private",
+          "sources": [
+            "user"
+          ],
+          "requires": [
+            "current explicit approval proof",
+            "current Writer validation"
+          ]
+        },
+        "approvedPreference": {
+          "operation": "capture_lumen_preference",
+          "kind": "preference",
+          "scope": "skill",
+          "access": "private",
+          "sources": [
+            "user"
+          ],
+          "requires": [
+            "current explicit approval proof",
+            "current Writer validation"
+          ]
+        },
+        "localProfile": {
+          "operation": "store_profile",
+          "scope": "skill",
+          "access": "private",
+          "requires": [
+            "explicit local-only request or controlled migration",
+            "explicitUserApproval: true"
+          ]
+        },
+        "confirmedLearning": {
+          "operation": "capture_lumen_learning",
+          "kind": "learning",
+          "requires": [
+            "transfer_confirmed learning proof",
+            "matching teaching validation"
+          ]
+        }
+      }
+    },
+    {
+      "id": "question-sharpener",
+      "name": "question-sharpener",
+      "role": "skill",
+      "version": "0.2.58",
+      "artifactType": "inquiry-packet",
+      "syncId": "lumen.skill.claude-code.question-sharpener"
+    },
+    {
+      "id": "expert-research",
+      "name": "expert-research",
+      "role": "skill",
+      "version": "0.2.58",
+      "artifactType": "research-report",
+      "syncId": "lumen.skill.claude-code.expert-research"
+    },
+    {
+      "id": "concept-visualizer",
+      "name": "concept-visualizer",
+      "role": "skill",
+      "version": "0.2.58",
+      "artifactType": "concept-visual-model",
+      "syncId": "lumen.skill.claude-code.concept-visualizer"
+    },
+    {
+      "id": "web-builder",
+      "name": "web-builder",
+      "role": "skill",
+      "version": "0.2.58",
+      "artifactType": "web-experience",
+      "syncId": "lumen.skill.claude-code.web-builder"
+    }
+  ],
+  "skills": [
+    "lumen",
+    "skillsmith",
+    "writer",
+    "question-sharpener",
+    "expert-research",
+    "concept-visualizer",
+    "web-builder"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "version": "writer-grounding-v1",
+  "depth": "micro",
+  "route": {
+    "primary": "relevance",
+    "support": [],
+    "reason": "Why this is the least costly route that can create the intended reader change.",
+    "escalation": "What observable failure would justify a deeper route."
+  },
+  "sourceUse": {
+    "contentSourceIds": [],
+    "baselineSourceIds": ["source-reader-baseline"],
+    "controlSourceIds": []
+  },
+  "attention": {
+    "mustNotice": "What the reader must notice first.",
+    "keepActive": "The one strand that should remain active through the landing.",
+    "remove": "The recap, side frame, or decoding burden the surface should remove.",
+    "readerChange": "The concrete before-to-after change in understanding, trust, feeling, or action."
+  },
+  "brief": {
+    "acceptedQuestion": "The exact task this surface answers.",
+    "sourceBoundary": "What the eligible source can and cannot support.",
+    "readerBefore": "The intended reader's likely starting state.",
+    "readerAfter": "The state the final should create.",
+    "messageGoal": "The smallest complete movement the surface should make.",
+    "voiceAnchors": []
+  },
+  "movement": {
+    "readerPressure": "Why this matters to this reader now.",
+    "generativeRelation": "The smallest true relation that can regenerate the important meaning.",
+    "storySpine": "The movement from current state through change to landing.",
+    "proofSpine": "The eligible facts or visible details that earn the movement.",
+    "transferPlan": "How the selected route changes the final without becoming visible process language.",
+    "successTest": "What a cold reader should reconstruct from the final alone."
+  },
+  "novelGrounding": null,
+  "operation": null
+}

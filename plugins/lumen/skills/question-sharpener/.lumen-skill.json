@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "managedBy": "lumen",
+  "adminCreated": true,
+  "syncId": "lumen.skill.claude-code.question-sharpener",
+  "skillId": "question-sharpener",
+  "name": "question-sharpener",
+  "version": "0.2.58",
+  "sourceHash": "lph_989c5fd7",
+  "packageVersion": "0.2.58",
+  "publicChangeSummary": "Adds a plain-language disclosure block to every skill, ships cross-skill invocation to all six specialists, fixes a stale SKILL.md that froze concept-visualizer at 0.2.55, moves the public contract into references for ~55% smaller skills, and adds a real licence.",
+  "runtimeProtocol": {
+    "id": "lumen-https",
+    "version": 2,
+    "transport": "https"
+  },
+  "stateSchemaVersion": 1,
+  "stableStateId": "lumen",
+  "publicPluginIdentity": "lumen",
+  "legacyIdentityAliases": [
+    "lumen-validation"
+  ],
+  "updatedAt": "2026-07-21T12:25:31.900Z"
+}

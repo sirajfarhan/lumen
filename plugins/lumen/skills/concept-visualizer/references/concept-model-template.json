@@ -1,0 +1,954 @@
+{
+  "concept": "",
+  "working_boundary": "",
+  "audience": "",
+  "output_surface": "",
+  "runtime_profile": {
+    "run_mode": "normal_durable",
+    "quality_floor": 90,
+    "active_evidence_lanes": [],
+    "branch_escalations": [],
+    "compact_decision_card": {
+      "boundary": "",
+      "selected_l": "",
+      "selected_a": "",
+      "selected_r": "",
+      "carrier_law": "",
+      "output_mode": "",
+      "main_prompt_risk": ""
+    },
+    "stop_rule": "",
+    "burden_notes": ""
+  },
+  "quality_target": {
+    "target_min_gate": 90,
+    "zero_caveat_standard": "Use only when the user asks for 100. No gate below target. No pass-with-review. No caveated inspection. No residual stock symbol outside the bounded model.",
+    "repair_attempts": []
+  },
+  "iteration_control": {
+    "mode": "initial",
+    "baseline": {
+      "baseline_id": "",
+      "version": 0,
+      "authoritative_artifact_path": "",
+      "lifecycle_status": "none",
+      "approval_scope": "none",
+      "approved_properties": [],
+      "open_properties": [],
+      "approval_evidence": "",
+      "supersession_rule": ""
+    },
+    "change_set": {
+      "request_in_user_language": "",
+      "operation_class": "initial_generation",
+      "mutate": [],
+      "protect": [],
+      "forbid": [],
+      "open": [],
+      "regions_or_frames": [],
+      "success_tests": [],
+      "regression_tests": [],
+      "ambiguity_and_safe_default": ""
+    },
+    "specification_views": {
+      "semantic_transcript": {
+        "intended_relation": "",
+        "entities_and_roles": [],
+        "causal_direction": "",
+        "nearest_misleading_reading": ""
+      },
+      "layout_transcript": {
+        "attention_order": [],
+        "spatial_correspondence": [],
+        "negative_space_owner": "",
+        "presentation_scale_requirement": ""
+      },
+      "cross_links": []
+    },
+    "reference_authority": [],
+    "production_authority": {
+      "world_identity": "",
+      "semantic_relation": "",
+      "object_identity": "",
+      "geometry_and_correspondence": "",
+      "material_and_texture": "",
+      "palette_and_lighting": "",
+      "composition": "",
+      "typography": "",
+      "export": ""
+    },
+    "operation_decision": {
+      "selected_operation": "initial_generation",
+      "why_least_destructive": "",
+      "predicted_collateral_change": [],
+      "previous_failure_class": "",
+      "retry_or_reset_rule": ""
+    },
+    "candidate_record": {
+      "candidate_id": "",
+      "parent_baseline_id": "",
+      "lifecycle_status": "diagnostic",
+      "internal_attempt_index": 1,
+      "internal_attempt_budget": 3,
+      "known_tradeoffs": []
+    },
+    "regression_comparison": {
+      "baseline_compared": false,
+      "requested_change_observation": "",
+      "protected_property_observations": [],
+      "forbidden_influence_observations": [],
+      "presentation_scale_observation": "",
+      "semantic_free_reconstruction": ""
+    },
+    "admission": {
+      "deterministic_checks": [],
+      "proxy_checks": [],
+      "independent_checks": [],
+      "human_checks": [],
+      "decision": "not_run",
+      "reason": "",
+      "unresolved_hard_failures": []
+    }
+  },
+  "source_cards": [
+    {
+      "title": "",
+      "url_or_citation": "",
+      "source_type": "",
+      "qualification": "",
+      "claim": "",
+      "conditions_or_limits": "",
+      "model_change": "",
+      "visual_implication": ""
+    }
+  ],
+  "evidence_lanes": {
+    "language_metaphor": {
+      "status": "used",
+      "claims": [],
+      "visual_implications": []
+    },
+    "culture_behavior": {
+      "status": "used",
+      "claims": [],
+      "visual_implications": []
+    },
+    "history_story_myth": {
+      "status": "used",
+      "claims": [],
+      "visual_implications": []
+    },
+    "scientific_theory": {
+      "status": "used",
+      "claims": [],
+      "visual_implications": []
+    },
+    "systems_modern": {
+      "status": "used",
+      "claims": [],
+      "visual_implications": []
+    }
+  },
+  "function_model": {
+    "core_relation": "",
+    "forces": [],
+    "agents": [],
+    "boundaries": [],
+    "transformations": [],
+    "feedback_loops": [],
+    "time_depth": "",
+    "tensions": []
+  },
+  "visual_model": {
+    "style_contract": {
+      "name": "tangible compressed visual story glyph",
+      "required_prompt_phrase": "tangible compressed visual story glyph",
+      "rules": [
+        "Render the concept as one restrained material story rather than a scene wall.",
+        "Use quiet negative space with three to six meaningful material events.",
+        "Make one visible contact point carry the movement from pressure into changed state.",
+        "Nest the story beats around one shared visual locus.",
+        "Let research choose the story relation, then hide most evidence inside that movement.",
+        "Keep the house style fixed while the concept changes the story.",
+        "Use material realism to make the concept relatable without becoming a literal human scene."
+      ],
+      "avoid": [
+        "atlas plate",
+        "ornate detail",
+        "many panels or collage",
+        "dense symbols",
+        "bare logo",
+        "single isolated mark",
+        "pure abstract line work",
+        "flat logo-like icon",
+        "process strip",
+        "storyboard sequence",
+        "timeline strip",
+        "separate stations",
+        "photorealistic people or rooms",
+        "anime or cartoon style",
+        "cinematic fantasy art",
+        "decorative corporate infographic",
+        "generic surreal mood art",
+        "readable labels unless explicitly requested"
+      ]
+    },
+    "reference_calibration": {
+      "use_references": false,
+      "reference_role": "",
+      "calibration_sources": [
+        {
+          "title": "",
+          "source_or_path": "",
+          "why_this_reference_matters": "",
+          "inference_job": "",
+          "transferable_principle": "",
+          "non_transferable_surface": "",
+          "failure_boundary": ""
+        }
+      ],
+      "search_angles_learned": [],
+      "grounding_changes": [],
+      "prompt_influence": "",
+      "uniqueness_boundary": "",
+      "reference_comparison_test": "",
+      "copy_risk_check": "",
+      "validation_result": ""
+    },
+    "intention_to_channel": {
+      "story_contract": {
+        "baseline_world": "",
+        "introduced_change": "",
+        "consequence": "",
+        "landing_or_decision": "",
+        "one_sentence_contract": "",
+        "nearest_wrong_story": ""
+      },
+      "story_state_model": {
+        "baseline_state": "",
+        "intervention_state": "",
+        "measured_or_observed_consequence": "",
+        "real_world_boundary": "",
+        "simulated_or_speculative_boundary": "",
+        "state_separation_rule": ""
+      },
+      "semantic_channel_ledger": [
+        {
+          "channel": "",
+          "story_owner": "",
+          "meaning": "",
+          "scope": "",
+          "visual_treatment": "",
+          "redundancy_reason": "",
+          "forbidden_leak": "",
+          "validation_question": ""
+        }
+      ],
+      "salience_budget": {
+        "primary_story_role": "",
+        "strongest_signal": "",
+        "background_limit": "",
+        "decorative_limit": "",
+        "attention_order_rule": ""
+      },
+      "evidence_layer_contract": {
+        "source_text_job": "",
+        "hierarchy_rule": "",
+        "legibility_boundary": "",
+        "must_not_explain": "",
+        "story_survives_without_citation_test": ""
+      },
+      "reveal_ledger": {
+        "mode": "single_frame",
+        "already_known": "",
+        "new_reveal": "",
+        "withheld_until_later": "",
+        "retained_world_anchors": [],
+        "final_reconstruction_target": ""
+      },
+      "cold_reconstruction_questions": [
+        {
+          "question": "What is real or already established?",
+          "expected_answer": "",
+          "evidence_cue": ""
+        },
+        {
+          "question": "What is simulated, proposed, or not yet real?",
+          "expected_answer": "",
+          "evidence_cue": ""
+        },
+        {
+          "question": "What changed?",
+          "expected_answer": "",
+          "evidence_cue": ""
+        },
+        {
+          "question": "What evidence supports the claim?",
+          "expected_answer": "",
+          "evidence_cue": ""
+        },
+        {
+          "question": "What decision or landing follows?",
+          "expected_answer": "",
+          "evidence_cue": ""
+        }
+      ]
+    },
+    "level_framework": {
+      "default_level": "L2",
+      "selected_level": "L2",
+      "selection_reason": "",
+      "concept_complexity_signal": "",
+      "root_story_sentence": "",
+      "consequence_radius": "",
+      "selected_level_story_unit": "",
+      "allowed_added_layer": "",
+      "forbidden_level_drift": "",
+      "lower_level_miss": "",
+      "higher_level_risk": "",
+      "style_consistency_contract": "",
+      "selection_rule_check": {
+        "selected_score": 0,
+        "nearest_competing_level": "",
+        "nearest_competing_score": 0,
+        "score_delta_percent": 0,
+        "root_retention": 0,
+        "decision_rule_result": ""
+      },
+      "candidate_levels": [
+        {
+          "level": "L2",
+          "story_job": "",
+          "what_it_would_show": "",
+          "what_it_misses_or_risks": "",
+          "estimated_relevance_score": 0,
+          "decision": ""
+        },
+        {
+          "level": "",
+          "story_job": "",
+          "what_it_would_show": "",
+          "what_it_misses_or_risks": "",
+          "estimated_relevance_score": 0,
+          "decision": ""
+        }
+      ],
+      "nested_cover_test": {
+        "cover_added_layer_result": "",
+        "cover_root_result": "",
+        "root_retention_rule": "",
+        "same_style_contract": ""
+      }
+    },
+    "articulation_framework": {
+      "default_articulation": "A2",
+      "selected_articulation": "A2",
+      "user_facing_translation": "",
+      "selection_reason": "",
+      "inference_failure_solved": "",
+      "what_it_adds_visually": "",
+      "what_it_must_not_add": "",
+      "lowest_articulation_tested": "",
+      "lower_articulation_failure": "",
+      "higher_articulation_risk": "",
+      "text_policy": "",
+      "text_off_test": "",
+      "abstraction_risk": "",
+      "realism_detail_risk": "",
+      "style_consistency_contract": "",
+      "selection_rule_check": {
+        "selected_score": 0,
+        "nearest_competing_articulation": "",
+        "nearest_competing_score": 0,
+        "score_delta_percent": 0,
+        "root_relation_retention": 0,
+        "decision_rule_result": ""
+      },
+      "candidate_articulations": [
+        {
+          "articulation": "A2",
+          "visual_job": "",
+          "what_it_would_show": "",
+          "what_it_misses_or_risks": "",
+          "estimated_relevance_score": 0,
+          "decision": ""
+        },
+        {
+          "articulation": "",
+          "visual_job": "",
+          "what_it_would_show": "",
+          "what_it_misses_or_risks": "",
+          "estimated_relevance_score": 0,
+          "decision": ""
+        }
+      ],
+      "cold_viewer_articulation_test": {
+        "object_naming": "",
+        "event_retell": "",
+        "what_happens_next": "",
+        "root_relation_after_delay": "",
+        "misreadings_to_watch": []
+      }
+    },
+    "perspective_holism": {
+      "ordinary_viewer_perspective": "",
+      "target_law_perspective": "",
+      "nearest_confusion_perspective": "",
+      "carrier_world_perspective": "",
+      "consequence_scale_perspective": "",
+      "example_transfer_check": ""
+    },
+    "representational_carrier": {
+      "default_mode": "object_event",
+      "selected_mode": "object_event",
+      "user_facing_translation": "",
+      "dominant_carrier_pressure": "",
+      "dominant_native_reading_check": {
+        "carrier_objects": [],
+        "native_reading_before_target": "",
+        "risk_to_target_recovery": "",
+        "visible_counter_cue": "",
+        "semantic_attractor_veto": {
+          "ordinary_function_names": [],
+          "confusable_concept_named_by_carrier": "",
+          "target_cue_visibility_rank": "",
+          "veto_or_keep_decision": ""
+        },
+        "keep_or_replace_decision": ""
+      },
+      "runner_up_pressure": "",
+      "why_object_event_fails_or_survives": "",
+      "primary_sign_logic": "",
+      "selection_reason": "",
+      "least_upgraded_carrier_check": "",
+      "l_axis_interaction": "",
+      "a_axis_interaction": "",
+      "presentation_dialect": "",
+      "medium_permissions": [],
+      "style_delta_from_object_event": "",
+      "prompt_transfer_instruction": "",
+      "validation_focus": "",
+      "carrier_specific_evidence_obligations": [],
+      "non_transfer_constraints": [],
+      "validation_questions": [],
+      "selection_rule_check": {
+        "selected_score": 0,
+        "nearest_competing_mode": "",
+        "nearest_competing_score": 0,
+        "score_delta_percent": 0,
+        "root_relation_retention": 0,
+        "decision_rule_result": ""
+      },
+      "candidate_modes": [
+        {
+          "mode": "object_event",
+          "story_job": "",
+          "what_it_would_show": "",
+          "what_it_misses_or_risks": "",
+          "estimated_relevance_score": 0,
+          "decision": ""
+        },
+        {
+          "mode": "",
+          "story_job": "",
+          "what_it_would_show": "",
+          "what_it_misses_or_risks": "",
+          "estimated_relevance_score": 0,
+          "decision": ""
+        }
+      ]
+    },
+    "carrier_law_coherence": {
+      "plain_label": "world coherence",
+      "technical_label": "carrier-law coherence",
+      "carrier_world": "",
+      "internal_law": "",
+      "viewer_role": "",
+      "admissible_evidence": [],
+      "truth_criterion": "",
+      "affordances_or_constraints": [],
+      "consequence_closure": "",
+      "coherence_breakers": [],
+      "earned_detail_budget": [],
+      "lawfulness_test": {
+        "carrier_identification": "",
+        "internal_law_sentence": "",
+        "viewer_role_sentence": "",
+        "three_law_bearing_cues": [],
+        "illegal_cue_check": ""
+      },
+      "post_generation_rubric": {
+        "carrier_law_coherence": 0,
+        "evidential_sufficiency": 0,
+        "modality_validity_fit": 0,
+        "signal_to_noise_discipline": 0,
+        "consequence_closure": 0,
+        "detail_economy": 0
+      }
+    },
+    "material_realism": {
+      "physical_materials": [],
+      "chosen_object_system": "",
+      "why_this_object_best_compresses_the_model": "",
+      "counter_material_or_force": "",
+      "common_object_anchor": "",
+      "everyday_affordance_check": {
+        "common_situation": "",
+        "whole_situation_integrity": "",
+        "familiar_action": "",
+        "simpler_known_world_test": "",
+        "private_machine_risk": "",
+        "element_affordance_audit": [
+          {
+            "visible_element": "",
+            "everyday_action": "",
+            "connection_logic": "",
+            "material_or_color_job": "",
+            "keep_or_replace": ""
+          }
+        ]
+      },
+      "ordinary_viewer_test": "",
+      "visible_elements_nameability": [
+        {
+          "visible_element": "",
+          "ordinary_name": "",
+          "story_job": ""
+        }
+      ],
+      "mystery_element_risks": [],
+      "visible_causality_chain": [
+        {
+          "visible_trace": "",
+          "visible_cause": "",
+          "story_information_carried": ""
+        }
+      ],
+      "physical_law_storytelling": {
+        "laws_or_forces": [],
+        "load_or_force_path": "",
+        "attachment_and_contact_logic": "",
+        "material_behavior_under_force": "",
+        "environmental_cues": "",
+        "failure_or_change_mechanism": "",
+        "why_no_part_feels_magical": ""
+      },
+      "contact_mechanics": "",
+      "relatable_object_logic": "",
+      "realism_boundary": "",
+      "material_evidence_links": []
+    },
+    "story_density": {
+      "hidden_story_movement": "",
+      "cross_cultural_pressure": "",
+      "single_frame_event_model": {
+        "object": "",
+        "environment": "",
+        "force_or_law": "",
+        "state_change": "",
+        "viewer_inference_bridge": ""
+      },
+      "compressed_story_reconstruction": "",
+      "future_if_it_holds": "",
+      "future_if_it_fails": "",
+      "visible_stakes": "",
+      "why_this_is_not_extra_detail": "",
+      "cold_viewer_story_test": ""
+    },
+    "target_reconstruction_specificity": {
+      "target_concept": "",
+      "nearest_confusable_concepts": [],
+      "why_confusion_is_likely": "",
+      "target_winning_cue": "",
+      "wrong_reading_repair": "",
+      "image_only_target_test": "",
+      "target_law": {
+        "governing_law": "",
+        "nearest_wrong_laws": [],
+        "relational_asymmetry_check": {
+          "applies": false,
+          "control_leaves": "",
+          "origin_trace_or_trigger": "",
+          "burden_is_accepted_by": "",
+          "accountability_or_credibility_cue": "",
+          "what_counts_as_failure_or_betrayal": "",
+          "what_counts_as_keeping_or_return": "",
+          "why_target_relation_beats_nearest_confusion": ""
+        },
+        "required_roles": [
+          {
+            "role": "",
+            "must_be_visible": "",
+            "wrong_reading_defeated": "",
+            "carrier_law_fit": ""
+          }
+        ],
+        "role_completeness_test": "",
+        "prompt_role_transfer_test": "",
+        "all_gate_recovery_test": ""
+      }
+    },
+    "structural_scaffold": {
+      "use_scaffold": false,
+      "decision": "",
+      "reason": "",
+      "artifact_type": "none",
+      "artifact_path": "",
+      "scaffold_contract": {
+        "shared_locus": "",
+        "force_path": "",
+        "attachment_logic": "",
+        "material_zones": "",
+        "negative_space": "",
+        "viewer_path": ""
+      },
+      "imagegen_transfer": "",
+      "overconstraint_risk": "",
+      "ab_test_plan_or_skip_reason": "",
+      "inspection_result": ""
+    },
+    "visual_sequence_architecture": {
+      "output_mode": "one_frame",
+      "decision_reason": "",
+      "one_frame_sufficiency_test": "",
+      "escalation_trigger": "",
+      "visual_spine": "",
+      "collapse_back_to_one_frame_test": "",
+      "text_image_labour": "",
+      "continuity_dossier": {
+        "world_bible": "",
+        "carrier_law_rules": "",
+        "identity_anchors": [],
+        "state_variables": [],
+        "fixed_conventions": [],
+        "camera_material_lock": [],
+        "allowed_changes": [],
+        "prohibited_drift": [],
+        "temporal_direction": ""
+      },
+      "beat_plan": [
+        {
+          "beat_id": "one_frame",
+          "role": "",
+          "image_job": "",
+          "viewer_model_update": "",
+          "state_change": "",
+          "stable_elements": [],
+          "changed_elements": [],
+          "world_law_carried": "",
+          "continuity_anchor": "",
+          "text_role": "",
+          "why_this_beat_is_needed": ""
+        }
+      ],
+      "asset_first_plan": {
+        "use_asset_first": false,
+        "trigger_conditions": [],
+        "reusable_elements": [],
+        "identity_preservation_target": "",
+        "world_asset": {
+          "description": "",
+          "path": "",
+          "story_job": ""
+        },
+        "topology_asset": {
+          "description": "",
+          "path": "",
+          "story_job": ""
+        },
+        "state_delta_overlays": [
+          {
+            "beat_id": "",
+            "stable_from_asset": "",
+            "visible_delta": "",
+            "overlay_or_prompt_path": ""
+          }
+        ],
+        "material_light_camera_lock": "",
+        "reference_input_plan": "",
+        "same_asset_test": "",
+        "scaffold_or_shot_plan": "",
+        "reference_use_boundary": "",
+        "repair_loop": ""
+      },
+      "reverse_story_oracle": {
+        "creator_boundary": "Creator builds leave latest_result.performed false. Blind reconstruction happens only in a separate evaluator report after neutral image copies exist.",
+        "no_text_target_story": "",
+        "acceptable_reconstructions": [],
+        "fail_conditions": [],
+        "evaluator_prompt": "",
+        "external_blind_validation_report_path": "",
+        "latest_result": {
+          "performed": false,
+          "image_paths": [],
+          "evaluator_independence_statement": "",
+          "data_boundary_confirmed": false,
+          "reconstructed_story": "",
+          "root_story_recovered": false,
+          "beat_order_recovered": false,
+          "world_continuity_score": 0,
+          "target_concept_recovery_score": 0,
+          "story_recovery_score": 0,
+          "grounded_reality_score": 0,
+          "object_role_recovery_score": 0,
+          "carrier_world_law_score": 0,
+          "level_meaning_score": 0,
+          "sequence_coherence_score": 0,
+          "all_gate_recovery_summary": "",
+          "failure_notes": ""
+        }
+      },
+      "validation_questions": []
+    },
+    "visual_compression": {
+      "primary_relation": "",
+      "viewer_inference": "",
+      "omitted_evidence": [],
+      "minimality_rule": "",
+      "stock_symbol_risks": [],
+      "residual_symbol_repair": ""
+    },
+    "visual_story": {
+      "before_pressure": "",
+      "turning_action": "",
+      "after_change": "",
+      "fusion_locus": "",
+      "evidence_echoes": [],
+      "story_read_path": ""
+    },
+    "spatial_structure": "",
+    "shape_language": [],
+    "material_texture": [],
+    "motion": [],
+    "scale": "",
+    "color_light": "",
+    "symbolic_rules": [],
+    "avoid_list": []
+  },
+  "image_prompt": {
+    "final_prompt": "",
+    "negative_prompt": "",
+    "variants": [],
+    "sequence_prompts": [
+      {
+        "beat_id": "",
+        "prompt": "",
+        "writer_artifacts": {
+          "source_path": "",
+          "grounding_path": "",
+          "draft_path": "",
+          "validation_path": "",
+          "validator_status": "",
+          "review_warnings": []
+        }
+      }
+    ],
+    "prompt_contract": {
+      "required_labels": [
+        "Use case:",
+        "Asset type:",
+        "Primary request:",
+        "Concept engine:",
+        "Visual story:",
+        "Style/medium:",
+        "Composition/framing:",
+        "Intention-to-channel map:",
+        "Evidence echoes:",
+        "Constraints:",
+        "Avoid:",
+        "Inspection target:"
+      ],
+      "writer_artifacts": {
+        "source_path": "",
+        "grounding_path": "",
+        "draft_path": "",
+        "validation_path": "",
+        "validator_status": "",
+        "review_warnings": []
+      }
+    }
+  },
+  "artifact_inspection": {
+    "artifact_path": "",
+    "direct_inspection": "",
+    "model_visible_in_artifact": "",
+    "caveats": [],
+    "stock_symbol_residue": []
+  },
+  "validation": {
+    "gates": {
+      "evidence_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "function_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "visual_transfer_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "story_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "compression_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "prompt_contract_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "recognizability_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "causality_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "physical_law_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "scaffold_decision_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "level_selection_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "nested_level_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "articulation_selection_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "articulation_transfer_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "representational_carrier_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "carrier_transfer_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "carrier_law_coherence_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "sequence_architecture_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "continuity_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "text_image_labour_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "intention_channel_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "story_density_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "stakes_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "style_consistency": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "reference_independence_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "artifact_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "cultural_historical_respect": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "audience_relevance": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "baseline_authority_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "change_scope_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "reference_authority_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "production_authority_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "regression_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      },
+      "admission_quality": {
+        "score": 0,
+        "weakest_point": "",
+        "evidence": ""
+      }
+    },
+    "overall_readiness_min_gate": 0,
+    "repair_focus": ""
+  }
+}

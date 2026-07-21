@@ -1,0 +1,252 @@
+{
+  "model_version": "web-builder-story-first-v1",
+  "accepted_request": "",
+  "assumptions": [],
+  "audience": {
+    "primary_visitor": "",
+    "starting_mental_model": "",
+    "misbelief_or_uncertainty_to_change": "",
+    "visitor_goal": "",
+    "site_owner_goal": "",
+    "effort_budget": ""
+  },
+  "story_router": {
+    "core_claim": "",
+    "target_change_in_understanding": "",
+    "target_action_or_feeling": "",
+    "proof_objects": [],
+    "risk_flags": [],
+    "fallback_plan": ""
+  },
+  "axis_profile": {
+    "journey_span": {
+      "selected": "Sequence",
+      "nearest_rejected": "",
+      "reason": "",
+      "failure_to_avoid": ""
+    },
+    "participation_contract": {
+      "selected": "Witness",
+      "nearest_rejected": "",
+      "reason": "",
+      "failure_to_avoid": ""
+    },
+    "proof_substrate": {
+      "selected": "Layout",
+      "nearest_rejected": "",
+      "reason": "",
+      "failure_to_avoid": ""
+    }
+  },
+  "carrier_decision": {
+    "selected_carrier": "",
+    "why_this_carrier_wins": "",
+    "rejected_carriers": [
+      {
+        "carrier": "",
+        "why_it_lost": ""
+      }
+    ],
+    "cold_reader_reconstruction_target": ""
+  },
+  "react_execution": {
+    "project_context": "",
+    "framework_default": "React",
+    "component_map": [],
+    "state_or_interaction_contract": "",
+    "data_or_evidence_contract": "",
+    "asset_contract": "",
+    "performance_budget": "",
+    "runtime_feasibility": {
+      "render_path": "",
+      "dependency_strategy": "",
+      "inspection_target": "",
+      "acceptance_reach": ""
+    }
+  },
+  "reference_adaptation": {
+    "source_hunt_method": "",
+    "source_contact": "",
+    "reference_candidates": [
+      {
+        "source": "",
+        "role": "",
+        "inspected_material": "",
+        "why_it_belongs": "",
+        "license_or_use_boundary": ""
+      }
+    ],
+    "mechanism_source_decision": "",
+    "mechanism_sources": [
+      {
+        "source": "",
+        "role": "",
+        "inspected_files_or_docs": "",
+        "reusable_mechanism": "",
+        "license_or_terms": "",
+        "use_decision": ""
+      }
+    ],
+    "selected_reference_or_pattern": "",
+    "why_it_matches_this_site": "",
+    "download_or_inspection_record": "",
+    "borrowed_invariant": "",
+    "code_or_pattern_transfer": "",
+    "license_and_attribution_boundary": "",
+    "transformation_plan": "",
+    "rejected_reference": ""
+  },
+  "content_and_style": {
+    "writer_content_lane": {
+      "writer_role": "",
+      "source_or_grounding": "",
+      "visible_copy_contract": "",
+      "copy_validation": ""
+    },
+    "art_direction_stack": {
+      "visual_target": "",
+      "token_system": "",
+      "component_primitives": "",
+      "motion_system": "",
+      "spatial_or_3d_system": "",
+      "reference_calibration": "",
+      "generic_style_failure_to_avoid": ""
+    }
+  },
+  "world_composition": {
+    "first_viewport_promise": "",
+    "attention_path": "",
+    "visual_world_law": "",
+    "motion_law": "",
+    "responsive_law": "",
+    "accessibility_law": ""
+  },
+  "aspect_improvement_loop": {
+    "accepted_improvement_question": "",
+    "aspect_under_repair": "",
+    "current_cover_or_failure": "",
+    "question_sharpener_result": {
+      "target": "",
+      "hiddenness_type": "",
+      "primary_instrument": "",
+      "check_instrument": "",
+      "reality_contact_rung": ""
+    },
+    "expert_research_trigger": "",
+    "build_rule": "",
+    "owning_module": "",
+    "rendered_validation_contact": "",
+    "skill_update_decision": ""
+  },
+  "spatial_gate": {
+    "needed": false,
+    "spatial_necessity": "",
+    "flat_alternative_rejected": "",
+    "burden_control": "",
+    "progressive_delivery": "",
+    "decision": ""
+  },
+  "spatial_build_ladder": {
+    "accepted_question": "",
+    "dependency_rule": "",
+    "current_application": "",
+    "rungs": [
+      {
+        "order": 1,
+        "name": "",
+        "module": "",
+        "proof_job": "",
+        "validation_contact": "",
+        "advance_condition": ""
+      }
+    ],
+    "repair_policy": []
+  },
+  "tool_state_gate": {
+    "needed": false,
+    "task_loop": "",
+    "entry_state": "",
+    "empty_state": "",
+    "active_state": "",
+    "error_state": "",
+    "success_state": "",
+    "focus_policy": "",
+    "decision": ""
+  },
+  "validation_plan": {
+    "deterministic_checks": [],
+    "screenshot_targets": [],
+    "key_states_to_inspect": [],
+    "accessibility_checks": [],
+    "performance_checks": [],
+    "cold_reconstruction_questions": [
+      "What is this?",
+      "Who is it for?",
+      "What changed in your understanding?",
+      "What action or feeling is now available?",
+      "Which visible parts made you infer that?"
+    ],
+    "artifact_path_or_url": "",
+    "evidence_sync": {
+      "canonical_model_path": "",
+      "current_artifact_path_or_url": "",
+      "stale_or_draft_records": "",
+      "sync_decision": ""
+    },
+    "rendered_inspection": {
+      "desktop": "",
+      "mobile_390": "",
+      "viewport_composition": "",
+      "interaction_or_state": "",
+      "accessibility_or_keyboard": "",
+      "performance_or_loading": ""
+    },
+    "cold_reconstruction_result": {
+      "reader_setup": "",
+      "reconstructed_site": "",
+      "reconstructed_change": "",
+      "reconstructed_action_or_feeling": "",
+      "visible_evidence": "",
+      "decision": ""
+    },
+    "source_transfer_review": {
+      "reviewer_setup": "",
+      "source_seen": "",
+      "mechanism_to_preserve": "",
+      "medium": "",
+      "score_calibration": "",
+      "reference_to_result_comparison": "",
+      "source_fit": {
+        "score": null,
+        "reason": ""
+      },
+      "mechanism_parity": {
+        "score": null,
+        "reason": ""
+      },
+      "transformation_distance": {
+        "score": null,
+        "reason": ""
+      },
+      "quality_parity": {
+        "score": null,
+        "reason": ""
+      },
+      "medium_proof_gain": {
+        "score": null,
+        "reason": ""
+      },
+      "identity_safety": {
+        "score": null,
+        "reason": ""
+      },
+      "two_d_comparison": "",
+      "three_d_comparison": "",
+      "medium_specific_check": "",
+      "lowest_gate": "",
+      "decision": ""
+    },
+    "remaining_limits": "",
+    "pass_condition": ""
+  }
+}

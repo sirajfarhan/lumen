@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "expert-research-lineage-v1",
+  "question": {
+    "decision": "<the decision or learning outcome this research must change>",
+    "consequence": "<what being wrong would cost>",
+    "scope": "<included population, system, jurisdiction, or context>",
+    "timeHorizon": "<currentness boundary>",
+    "evidenceStandard": "<domain-native standard that can earn the claim>"
+  },
+  "reportBinding": {
+    "artifactName": "research report",
+    "contentHash": "fnv1a32:<validator-reported hash of the final trimmed UTF-8 report>"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "<source title>",
+      "locator": "<direct URL, DOI, identifier, or inspectable local locator>",
+      "domain": "<exact domain of earned judgment>",
+      "role": "<claim-relative source role>",
+      "qualification": "<why this source may speak to this exact claim>",
+      "incentive": "<accountability and incentive note>",
+      "dependenceGroup": "<upstream evidence or correction group>",
+      "state": "EVIDENCE_ACCEPTED",
+      "version": {
+        "retrievedAt": "<ISO date>",
+        "status": "CURRENT"
+      },
+      "anchors": [
+        {
+          "id": "A1",
+          "locator": "<page, section, paragraph, timestamp, region, query result, or rule>",
+          "content": "<short quote, careful paraphrase, datum, rule, or observed result>",
+          "kind": "<quote | paraphrase | data | rule | observation | code_result | multimodal>",
+          "inspected": true
+        }
+      ]
+    }
+  ],
+  "leads": [
+    {
+      "id": "L1",
+      "origin": "<search, graph, API, model association, memory, or reference trail>",
+      "target": "<candidate source or relation>",
+      "relation": "SUGGESTS",
+      "state": "DISCOVERED",
+      "allowedUse": "discovery_only",
+      "convertedSourceId": "<optional accepted source id after separate inspection and qualification>"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "wording": "<one atomic claim>",
+      "type": "<causal | descriptive | operational | formal_rule | forecast | judgment | decision_rule>",
+      "status": "SUPPORTED",
+      "basis": "independent_convergence",
+      "conditions": "<where and for whom the claim applies>",
+      "limits": "<where support stops>",
+      "confidence": "MODERATE",
+      "decisionEffect": "<how this claim changes the answer or action>",
+      "evidenceLinkIds": ["E1"]
+    }
+  ],
+  "evidenceLinks": [
+    {
+      "id": "E1",
+      "sourceId": "S1",
+      "anchorId": "A1",
+      "claimId": "C1",
+      "relation": "SUPPORTS",
+      "state": "EVIDENCE_ACCEPTED",
+      "directness": "<direct or indirect for this exact claim>",
+      "weight": "<high | moderate | low>",
+      "rationale": "<why this inspected anchor may move this claim>"
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "D1",
+      "sourceIds": ["S1", "S2"],
+      "relation": "USES_DATA_FROM",
+      "impact": "<how the shared origin changes apparent convergence or weight>"
+    }
+  ],
+  "derivations": [
+    {
+      "id": "R1",
+      "claimId": "C2",
+      "inputClaimIds": ["C1"],
+      "evidenceLinkIds": ["E1"],
+      "method": "<calculation, causal interpretation, synthesis, or transformation>",
+      "result": "<derived result>",
+      "uncertainty": "<assumptions, sensitivity, and error boundary>"
+    }
+  ],
+  "updates": [
+    {
+      "id": "U1",
+      "sourceId": "S1",
+      "status": "CORRECTED",
+      "dependentClaimIds": ["C1"],
+      "action": "<mark claims for review, recompute derivations, and revisit decision>"
+    }
+  ],
+  "trajectory": [
+    {
+      "id": "T1",
+      "at": "<ISO timestamp>",
+      "stage": "retrieval",
+      "action": "<bounded query, inspection, rejection, comparison, or synthesis action>",
+      "tool": "<tool or manual inspection>",
+      "parameters": {
+        "queryOrVocabulary": "<reproducible public search terms or bounded parameters>"
+      },
+      "rationale": "<why this action could change the decision model>",
+      "resultIds": ["L1"],
+      "resultType": "DISCOVERY_LEAD",
+      "effect": "<what changed, narrowed, failed, or stayed stable>",
+      "nextMove": "<next bounded research action or stop>"
+    },
+    {
+      "id": "T2",
+      "at": "<ISO timestamp>",
+      "stage": "synthesis",
+      "action": "<compare accepted claims and the strongest alternative>",
+      "tool": "manual synthesis",
+      "parameters": {
+        "stopRule": "<what another source would need to change>"
+      },
+      "rationale": "<why synthesis is now earned>",
+      "resultIds": ["C1"],
+      "resultType": "DECISION_UPDATE",
+      "effect": "<decision or boundary created>",
+      "nextMove": "<handoff or a named unresolved acquisition>"
+    }
+  ],
+  "stageResults": [
+    {
+      "stage": "source_qualification",
+      "status": "pass",
+      "evidence": "<inspectable evidence for this stage>",
+      "nextAction": "<preservation or repair move>"
+    },
+    {
+      "stage": "claim_extraction",
+      "status": "pass",
+      "evidence": "<inspectable evidence for this stage>",
+      "nextAction": "<preservation or repair move>"
+    },
+    {
+      "stage": "citation_integrity",
+      "status": "pass",
+      "evidence": "<inspectable evidence for this stage>",
+      "nextAction": "<preservation or repair move>"
+    },
+    {
+      "stage": "provenance_completeness",
+      "status": "pass",
+      "evidence": "<inspectable evidence for this stage>",
+      "nextAction": "<preservation or repair move>"
+    },
+    {
+      "stage": "consensus_independence",
+      "status": "pass",
+      "evidence": "<inspectable evidence for this stage>",
+      "nextAction": "<preservation or repair move>"
+    },
+    {
+      "stage": "dissent_and_limits",
+      "status": "pass",
+      "evidence": "<inspectable evidence for this stage>",
+      "nextAction": "<preservation or repair move>"
+    },
+    {
+      "stage": "decision_usefulness",
+      "status": "pass",
+      "evidence": "<inspectable evidence for this stage>",
+      "nextAction": "<preservation or repair move>"
+    },
+    {
+      "stage": "update_status",
+      "status": "not_applicable",
+      "evidence": "<currentness check or reason this stage is inactive>",
+      "nextAction": "<when to recheck>"
+    }
+  ],
+  "transferContracts": [
+    {
+      "id": "X1",
+      "sourceDomain": "<source domain>",
+      "targetDomain": "<target domain>",
+      "sourceClaimIds": ["C1"],
+      "preservedRelation": "<relation that may transfer>",
+      "mechanism": "<why the relation could operate in the target>",
+      "targetClaimId": "C2",
+      "targetEvidenceLinkIds": ["E2"],
+      "nonTransferredClaims": ["<efficacy, authority, value, scale, or context that does not transfer>"],
+      "conditions": "<conditions for target use>",
+      "failureConditions": "<what would reject the transfer>"
+    }
+  ],
+  "coverageMaps": [
+    {
+      "id": "M1",
+      "populationOrCorpus": "<population, archive, database, or corpus>",
+      "stages": {
+        "recordOpportunity": "unknown",
+        "creation": "unknown",
+        "preservation": "unknown",
+        "indexing": "partial",
+        "access": "partial",
+        "retrieval": "partial",
+        "inspection": "partial",
+        "reporting": "partial"
+      },
+      "missingnessEffect": "<what the observed absence can and cannot establish>"
+    }
+  ],
+  "decision": {
+    "recommendation": "<current answer>",
+    "confidence": "<confidence with its condition>",
+    "currentAction": "<next concrete move>",
+    "changeConditions": "<evidence that would reopen the decision>",
+    "alternative": "<strongest rival action or explanation>",
+    "stopReason": "<why another source is not currently worth its burden>",
+    "claimIds": ["C1"]
+  }
+}

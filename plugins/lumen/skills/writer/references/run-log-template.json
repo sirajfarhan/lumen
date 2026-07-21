@@ -1,0 +1,43 @@
+{
+  "schema_version": "writer-run-log-v1",
+  "_template_contract": "Use when Writer behavior is being measured. Also use for tuning or comparison. Treat timing evidence as efficiency evidence and quality acceptance as a separate behavior gate.",
+  "probe_id": "",
+  "surface_type": "",
+  "started_at": "",
+  "finished_at": "",
+  "final_status": "",
+  "measurement_quality": "exact_or_reconstructed",
+  "stage_events": [
+    {
+      "stage": "source_reading",
+      "started_at": "",
+      "finished_at": "",
+      "duration_seconds": 0,
+      "measurement_quality": "exact_or_reconstructed",
+      "notes": "What was learned or decided in this stage."
+    }
+  ],
+  "validator_runs": [],
+  "repair_events": [
+    {
+      "trigger": "",
+      "failed_or_warning_checks": [],
+      "started_at": "",
+      "finished_at": "",
+      "duration_seconds": 0,
+      "repair": "What changed and where. Name the touched surface.",
+      "preventable_next_time": true,
+      "notes": "Why this repair was needed and what should be written correctly before the next validator run."
+    }
+  ],
+  "efficiency_review": {
+    "largest_time_sink": "",
+    "avoidable_loop": "",
+    "grounding_depth_used": "",
+    "grounding_depth_was_sufficient": "",
+    "grounding_quality_effect": "",
+    "grounding_escalation_signal": "",
+    "quality_effect": "",
+    "next_prevention_rule": ""
+  }
+}

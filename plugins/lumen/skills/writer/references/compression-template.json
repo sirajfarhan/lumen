@@ -1,0 +1,51 @@
+{
+  "groundingOperation": {
+    "kind": "compression",
+    "target": "The surface burden that should become smaller.",
+    "readerModel": {
+      "audience": "The intended reader.",
+      "baseline": "What this reader already knows.",
+      "familiarity": "novice",
+      "consequence": "ordinary"
+    },
+    "surfaceBudget": {
+      "mode": "shortest_passing",
+      "value": null,
+      "unit": "words"
+    },
+    "distortionBoundary": {
+      "acceptableLoss": "Material the reader can lose without changing the intended model or action.",
+      "unacceptableLoss": "Any loss that would change the intended model, truth boundary, or action."
+    },
+    "preservedRelations": [
+      {
+        "id": "relation-1",
+        "kind": "causal",
+        "statement": "The source-supported relation that must survive.",
+        "sourceIds": ["source-current-user"],
+        "reconstructionTarget": "What a cold reader should be able to recover from the final."
+      }
+    ]
+  },
+  "validationCompression": {
+    "operation": "compression",
+    "sourceWords": 0,
+    "finalWords": 0,
+    "reductionPercent": 0,
+    "preservedRelationIds": ["relation-1"],
+    "relationEvidence": [
+      {
+        "relationId": "relation-1",
+        "finalEvidence": ["An exact span from the current final."],
+        "reconstruction": "How the final lets the reader recover this relation."
+      }
+    ],
+    "independentReview": {
+      "required": true,
+      "reviewer": "A fresh reader who did not create the draft.",
+      "inputBoundary": "The current final plus a minimal audience description only.",
+      "reconstruction": "The required relations the reader recovered from the final.",
+      "decision": "pass"
+    }
+  }
+}

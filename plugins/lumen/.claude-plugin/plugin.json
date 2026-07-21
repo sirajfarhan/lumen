@@ -1,0 +1,19 @@
+{
+  "name": "lumen",
+  "version": "0.2.58",
+  "description": "Six skills for writing, research, questions, diagrams, web builds, and skill-building — each checked for quality before the result reaches you.",
+  "author": {
+    "name": "Siraj",
+    "email": "hello@siraj.ai",
+    "url": "https://siraj.ai"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "keywords": [
+    "lumen",
+    "skills",
+    "readiness"
+  ],
+  "skills": [
+    "./skills"
+  ]
+}

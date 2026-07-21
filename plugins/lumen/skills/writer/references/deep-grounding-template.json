@@ -1,0 +1,169 @@
+{
+  "grounding_version": "attention-steering-v1",
+  "_template_contract": "Scaffold only. Fill task-specific grounding before validation. Every filled field should name the inspectable relation that will guide the draft.",
+  "_first_pass_prevention": "Before drafting, make the grounding effort and route inspectable. Clean source capture should lead into visible route success. Brief fields must be full relations, not topic labels. Reader encounter should show first contact becoming an attention path. Root movement should name from source, through relation, to reader action. Every not_applicable field still needs a because-reason tied to the movement the reader meets.",
+  "_brief_smoke_test": "For short or structured inputs, check the brief fields before drafting. Context must carry past pressure into current reader need and future movement. Message goal must bind felt effect to practical action. Compression goal must name the one combine or cut move. Language register must use the phrases voice/register boundary and source wording. Voice anchors must stay to five items or fewer and should usually be short exact source spans.",
+  "_perspective_transfer_preflight": "Before drafting, name the perspective that must survive. It may be speaker certainty. It may be reader stake. It may be system boundary or time horizon. It may be evidence basis or decision ownership. Keep only the perspective that changes the draft or proof. A narrow example should teach its invariant across an unrelated surface rather than become a phrase template.",
+  "_scope_note_preflight": "For product or proposal scope notes only, name the deferred boundary layer. Name the included operating loop. Name the reader action the loop serves. Name the source stance marker worth preserving. Draft the loop as input -> signal -> owner action instead of as a feature list. Before validation, remove three-peer-item sentences unless a list is the requested surface.",
+  "_artifact_preflight": "For artifacts, name the reader movement the medium must carry. Name the first visible promise, the main interaction or proof state, and the responsive text risk. Name how the reader payoff appears before controls become work. Keep final.md as a compact reader-surface proof rather than a control inventory.",
+  "grounding_complexity": "simple",
+  "grounding_depth": "standard",
+  "grounding_effort": {
+    "quality_floor": "Name how source truth must become user-voiced reader movement with validation proof.",
+    "depth_choice": "State micro, standard, or deep and why this is least sufficient. For measured runs with full validation evidence, default to standard unless micro can plainly keep proof visible without retries.",
+    "burden_to_cut": "Name the avoidable grounding work this run should not spend because it would not change the final.",
+    "escalation_trigger": "Name the signal that would justify deeper grounding before validation.",
+    "stop_rule": "Name when another grounding pass would be waste because the surface movement would not improve.",
+    "better_output_reason": "Explain why this grounding should make the final better than both ungrounded drafting and overgrounded drafting."
+  },
+  "grounding_steer": {
+    "attention_problem": {
+      "must_notice_first": "The first thing the reader must notice for the piece to make sense.",
+      "must_remain_active": "The main strand the reader must keep active from first contact to landing.",
+      "attention_to_protect": "The reader effort that should be spent because it creates useful understanding.",
+      "attention_to_remove": "The attention leak or wrong search the final should remove.",
+      "reader_state_change": "The concrete before to after change in what the reader can understand, trust, or do."
+    },
+    "route_selection": {
+      "primary_route": "relevance",
+      "support_routes": [
+        "proof"
+      ],
+      "route_reason": "Why this route is the least costly way to create the intended reader movement.",
+      "mode_cost": "What this route makes the reader spend attention on, and why that cost is earned.",
+      "escalation_rule": "When to add or switch routes if the first route cannot carry the pressure."
+    },
+    "route_contract": {
+      "success_signals": [
+        "Reader attention success: visible final evidence shows the selected route movement.",
+        "Reader state-change success: visible final evidence shows the intended action or trust shift."
+      ],
+      "failure_risks": [
+        "Failure risk: the route could waste reader attention or flatten the source pressure."
+      ],
+      "validation_focus": "Inspect reader attention through route movement and failure risk in the final surface."
+    }
+  },
+  "brief": {
+    "output_shape": "How the reader will receive the final surface.",
+    "source_summary": "The user's material in one precise sentence.",
+    "accepted_question_under_discussion": "The question or task the user actually asked this run to answer.",
+    "attention_leak_guard": "Name the side frame the draft must not import. If a boundary is required, keep it local to the safe answer.",
+    "context": "Past source pressure -> current reader need -> future movement, written as one source-specific relation.",
+    "reader_pressure": "The reader state that makes the final matter and the risk if it lands flat.",
+    "message_goal": "Write as Emotional shift: name the felt reader effect. Practical effect: name the reader action or decision the final should make easier. For conceptual notes, the practical effect may be noticing or judgment.",
+    "compression_goal": "Write as Compression move: compress the source relation into the reader movement while preserving source truth.",
+    "perspective_transfer": "Write as Perspective to preserve: name the source stance or boundary that must survive. Transfer test: name one unrelated surface where the same drift would matter.",
+    "artifact_surface_plan": "If an artifact is requested, write as Medium movement: name what the medium can do better than prose. Payoff before controls: name the smallest action that reveals value. Microcopy risk: name the visible wording most likely to drift or clip. Otherwise write not_applicable because the surface is text-only.",
+    "language_register": "Write as voice/register boundary: target user register here. Then source wording: exact rhythm or words to preserve. Then polish to avoid: named drift.",
+    "voice_anchor": [
+      "Exact user rhythm or wording that should survive if useful."
+    ],
+    "provided_marker": "provided:user_material"
+  },
+  "reader_connection": {
+    "reader_before_state": "The reader's likely state before the final reaches them.",
+    "reader_after_state": "The reader change the final should create.",
+    "emotional_bridge": "The emotional movement the piece must create.",
+    "story_spine": "The movement spine of the piece, using the route the attention problem earns.",
+    "proof_spine": "How concrete proof supports the movement instead of sitting as inventory.",
+    "semantic_compression": {
+      "generative_relation": "The smallest true relation that can regenerate the important meaning.",
+      "reader_effect": "The reader change this relation creates.",
+      "processing_effort": "Why this form is easy enough for the reader to receive.",
+      "semantic_gravity": "The concrete contact that keeps dense language felt.",
+      "regeneration_target": "What a blind reader should correctly infer from the final."
+    },
+    "pressure_bearing_relation": {
+      "source_constraint": "Constraint: name who or what is under source pressure and what cost creates the limit.",
+      "true_relation": "Relation: name how the source facts connect because a decision or proof changes the future.",
+      "earned_implication": "Implication: name the fair reader inference and the pressure it creates.",
+      "source_warrant": "Warrant: name the source fact or true relation that supports the implication."
+    },
+    "audience_relevance": {
+      "primary_audience": "Audience: name the reader role the final must serve; infer and mark uncertainty when needed.",
+      "audience_stake": "Stake: name the audience stake and the trust pressure that makes it matter now.",
+      "prior_context": "Name the prior context this reader likely brings before reading.",
+      "useful_cognitive_effect": "Effect: name the useful reader effect that should carry into action after reading.",
+      "effort_budget": "Effort budget: name how much attention this reader can spend before the surface becomes too heavy.",
+      "likely_misread": "Misread to prevent: name the wrong reading, assumption, or confusion the final must block.",
+      "adaptation_plan": "Name how the surface adapts for this audience while preserving user voice."
+    },
+    "movement_synthesis": "Bind reader pressure through the generative relation into proof. Use this exact chain: reader pressure -> generative relation -> proof -> route turn -> final movement. Then fill the actual source relation.",
+    "conceptual_engine": {
+      "controlling_model": "For conceptual or abstract writing, start with Concrete model: then name the smallest concrete model that carries the thought. For other writing, say not_applicable and why.",
+      "dimensions_to_carry": "Start with Dimensions carried: then name what the concrete model must carry as one movement instead of a list.",
+      "continuity_plan": "Start with Continuity plan: then name how the final will return to this concrete model after the opening instead of becoming dry explanation."
+    },
+    "misread_to_prevent": "The wrong conclusion, flat reading, or generic impression the final must prevent."
+  },
+  "reader_encounter": {
+    "first_contact": "The reader first sees X, which opens attention toward Y.",
+    "reader_path": "Reader path: attention moves from source contact through relation into consequence.",
+    "attention_hierarchy": "Attention hierarchy: name what dominates, what supports, and what lands.",
+    "load_budget": {
+      "intrinsic_load": "Effort kept: name the necessary complexity the reader must carry.",
+      "extraneous_load_to_remove": "Effort removed: name the avoidable friction the final should remove.",
+      "chunking_plan": "Chunking move: name how the surface breaks meaning into receiveable units.",
+      "progressive_disclosure": "Reveal plan: name how the surface reveals complexity only when the reader is ready."
+    },
+    "rhetorical_contract": {
+      "audience_stake": "What the reader has at stake in accepting the movement.",
+      "implied_premise": "The unstated belief the final needs the reader to accept.",
+      "trust_proof": "The visible proof that earns the reader's trust.",
+      "likely_objection_or_misread": "The misread or objection the final must absorb before trust can move."
+    },
+    "medium_contract": {
+      "surface_type": "Name the requested reader surface in six or more words, such as short client update message for waiting collaborator.",
+      "surface_affordance": "What this medium lets the reader do or feel that plain prose would not.",
+      "visual_or_structural_carrier": "The surface structure that carries the movement.",
+      "text_carrier": "The line or language pattern that carries the same movement.",
+      "dual_coding_alignment": "How visual or structural form and text reinforce one meaning.",
+      "failure_if_seen_cold": "How the surface would fail if a reader saw it without the source or grounding."
+    },
+    "surface_grammar": {
+      "gestalt_plan": "How perceptual grouping should guide first perception.",
+      "information_design_plan": "How proof density should earn trust.",
+      "interaction_plan": "For interactive surfaces, how page state should make action obvious; otherwise say not_applicable because the reader surface is static prose.",
+      "mobile_or_render_risk": "The visual or responsive risk to inspect, or not_applicable because the surface has no rendered layout risk.",
+      "surface_success_test": "What a cold reader should reconstruct from the final surface alone."
+    }
+  },
+  "nested_coherence": {
+    "root_reader_movement": "Write as from source input -> through relation -> to reader action, then fill the actual movement.",
+    "active_pressure_fields": [
+      "In four or more words, literally name the pressure or reader risk that should recur across the surface. It may also name value or drift."
+    ],
+    "forbidden_drifts": [
+      "Name in four or more whitespace-separated words a drift that would pull the surface away from the root movement. Use spaced words rather than hyphenated shortcut labels."
+    ],
+    "scale_plan": {
+      "word": "How marked word choices should carry the active pressure without importing the wrong field.",
+      "sentence": "How each sentence should make its relation to the previous sentence and parent move inferable.",
+      "paragraph": "How each paragraph should create one reader-state gain instead of accumulating coverage.",
+      "section": "How each section should change what the reader can infer, or not_applicable because the surface has no sections.",
+      "whole_surface": "How the whole should let a cold reader reconstruct the movement.",
+      "multimodal": "How any non-text element should carry the movement through its own affordance, or not_applicable because this surface is text-only."
+    },
+    "unit_checks": [
+      {
+        "surface_unit": "Write a visible unit name with at least five whitespace-separated words. Use spaced descriptive names rather than hyphenated shortcuts or one or two word UI labels.",
+        "claimed_reader_delta": "In five or more words, what this unit changes in the reader's model.",
+        "relation_to_parent": "In five or more words, how this unit serves the larger movement.",
+        "surface_signal": "The visible cue that proves this unit belongs to the larger movement.",
+        "removal_test": "What becomes weaker or impossible if this unit is removed."
+      }
+    ],
+    "reconstruction_target": "What a cold reader should infer about the movement and each major unit's role."
+  },
+  "_novel_route_contract": {
+    "when_to_fill": "Fill top-level story_candidates, selected_story, and choice only when primary_route or support_routes includes novel.",
+    "candidate_contract": "Use named novels with findable scenes and verified or high-confidence short phrase anchors.",
+    "scene_contract": "Map the scene as one movement from before pressure into later consequence.",
+    "transfer_contract": "Show why the source scene clarifies this exact problem and how its movement becomes the final surface.",
+    "voice_contract": "Keep the source invisible while user rhythm, word choice, and residue removal protect the user's voice."
+  },
+  "story_candidates": [],
+  "selected_story": {},
+  "choice": {}
+}

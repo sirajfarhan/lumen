@@ -1,0 +1,159 @@
+{
+  "validation_version": "writer-validation-v3",
+  "_first_pass_prevention": "Before running validation, make every evidence field quote or name a visible final moment from the current draft or artifact. Treat scores as diagnostic and not calibrated. Make transfer_proof a quote bridge: final_movement, coherence_transfer_used, and success_test_result should reuse visible nouns or verbs from the current final evidence. Make reader_oracle point to an independent cold-reader note from a fresh subagent with final-only evidence and PASS or REDRAFT. User voice evidence should explain user voice under pressure. Reader encounter evidence should explain independent cold-reader surface movement. Route success evidence should quote full visible spans rather than short fragments. Cognitive effect evidence must name effect or action or decide or trust or infer or movement instead of vague quality language. Audience review must state the audience basis as reader role plus relevance pressure. For artifacts, direct inspection fields must state what rendering proved about visible movement and craft. After any draft or artifact repair, every quoted final line is stale until resynced. Quote-sync by checking that each quoted span appears in the current readable surface and has enough words to inspect, then update old or too-thin evidence instead of preserving it.",
+  "hard_gates": {
+    "grounding_quality": {
+      "passed": true,
+      "evidence": "Why the grounding is specific and relevant because it guides the selected reader route."
+    },
+    "final_artifact_quality": {
+      "passed": true,
+      "evidence": "How source truth becomes clear reader movement in the final surface, quoting or naming one visible final moment."
+    },
+    "transfer_quality": {
+      "passed": true,
+      "evidence": "How the final movement comes from the selected grounding route while hiding residue, with visible final evidence."
+    },
+    "user_voice": {
+      "passed": true,
+      "evidence": "Why the final sounds like the user voice deciding under this relationship pressure, with a visible line as evidence."
+    },
+    "reader_encounter_quality": {
+      "passed": true,
+      "evidence": "Why a cold reader can reconstruct the final surface path and movement from the visible final alone."
+    },
+    "audience_relevance_quality": {
+      "passed": true,
+      "evidence": "Write as: audience relevance -> stake -> effort fit -> misread handled -> visible final moment."
+    },
+    "nested_coherence_quality": {
+      "passed": true,
+      "evidence": "Why every visible scale carries the same reader movement from word to whole surface, naming the visible units."
+    }
+  },
+  "hard_gate_scores": {
+    "_score_contract": "Use 0-100 diagnostic scores when behavior or artifact readiness is being measured. Overall readiness is the lowest credible hard gate, not an average. A passed acceptance run should not report a lowest hard gate below 90; below that, mark REDRAFT or PASS WITH REVIEW and repair before release.",
+    "grounding_quality": 0,
+    "final_artifact_quality": 0,
+    "transfer_quality": 0,
+    "user_voice": 0,
+    "reader_encounter_quality": 0,
+    "audience_relevance_quality": 0,
+    "nested_coherence_quality": 0,
+    "overall_readiness_lowest_gate": 0
+  },
+  "transfer_proof": {
+    "final_movement": "The movement a reader actually receives, using visible nouns or verbs from the current final evidence.",
+    "final_evidence": [
+      "Copy four or more exact words from the current final and verify the span appears, or name a visible artifact moment."
+    ],
+    "coherence_transfer_used": "The selected grounding route or novel coherence transfer that shaped the quoted final movement.",
+    "success_test_result": "Whether the grounding route contract or novel success test is satisfied, stated through the quoted final span.",
+    "story_residue_visible": false
+  },
+  "grounding_steer_review": {
+    "primary_route_used": "The exact primary_route from grounding_steer.route_selection.",
+    "attention_problem_evidence": "How the final spends reader attention on the intended thing and removes avoidable effort.",
+    "route_success_evidence": [
+      "Copy four or more exact words from the current final and verify the span appears, or name a visible artifact moment."
+    ],
+    "route_failure_risk_review": "Which route failure risk was checked and why the final avoids it.",
+    "novel_grounding_used": false,
+    "novel_grounding_judgment": "Why novel grounding was used, or why another route carried the movement with lower attention cost."
+  },
+  "perspective_transfer_review": {
+    "source_perspective_preserved": "Name the source stance or boundary that survived in the final.",
+    "surface_evidence": "Quote four or more exact words from the final showing that perspective without example imitation.",
+    "holistic_boundary_judgment": "Name the relevant perspective that was included, the angle intentionally left out, and why that boundary improves reader movement."
+  },
+  "attention_leak_review": {
+    "accepted_question_under_discussion": "Name the user question or task this final answers.",
+    "side_frame_risk": "Name the side frame that could have leaked attention away from the answer, such as worldview diagnosis or refusal posture.",
+    "non_leak_judgment": "Say PASS or REDRAFT. PASS requires the final to answer the accepted question without importing an unwarranted side frame.",
+    "safety_boundary_judgment": "Name any required boundary and explain how the final kept it local while still answering the safe part. If none, say not_applicable with a reason."
+  },
+  "grounding_efficiency_review": {
+    "depth_used": "The grounding_depth used in the current grounding artifact.",
+    "quality_floor_preserved": "How source truth became user-voiced reader movement with validation proof under this depth choice.",
+    "burden_cut": "What grounding work was intentionally avoided because it would not change the final surface.",
+    "escalation_judgment": "Whether deeper grounding was needed, and what signal justified that judgment.",
+    "better_output_judgment": "Why the final is better than an ungrounded pass and not weakened by overgrounding."
+  },
+  "semantic_compression_review": {
+    "regeneration_result": "What a blind reader can infer from the final.",
+    "anti_gaming_judgment": "Write as Echo/parrot risk checked: then say why the final is not merely echoing grounding vocabulary and name the concrete relation that earns it.",
+    "proxy_score_judgment": "Treat the proxy score as diagnostic evidence, not calibrated proof of reader quality."
+  },
+  "nested_coherence_review": {
+    "root_movement_received": "The whole reader movement visible in the final.",
+    "scale_evidence": {
+      "word": "Marked word choice that carries the active pressure without drift.",
+      "sentence": "Sentence-level relation that makes the movement inferable.",
+      "paragraph": "Paragraph-level reader-state gain.",
+      "section": "Section-level before -> after change, or not_applicable because the surface has no sections.",
+      "whole_surface": "How the whole final reconstructs as one movement.",
+      "multimodal": "How non-text elements carry the movement through their affordance, or not_applicable because the surface is text-only."
+    },
+    "orphan_or_drift_check": "Use orphan or drift while naming the visible element risk and how it was repaired or judged safe.",
+    "removal_test_result": "Write this shape: if we remove the visible unit, the reader movement becomes weaker because the unit carries the needed relation.",
+    "reconstruction_match": "How cold-reader reconstruction matched the nested coherence contract."
+  },
+  "inference_audit": {
+    "felt_implications": [
+      {
+        "implication": "Start with Felt implication: then name the reader trust or risk inference the source warrants.",
+        "source_warrant": "Start with Source warrant: then name the source fact or relation that makes this implication fair.",
+        "final_evidence": "Exact current final line or visible artifact moment where the implication appears.",
+        "judgment": "Use supported or softened or cut. Then state why the source warrant is enough or not enough."
+      }
+    ],
+    "unsupported_implication_risk": "The strongest feeling the final could create without enough warrant, or not_applicable with a reason."
+  },
+  "audience_relevance_review": {
+    "relevance_score": 0,
+    "score_basis": "Explain the score basis as visible evidence and judgment. Say it is not calibrated measurement.",
+    "audience_used": "Write as Audience basis: name the reader role plus the relevance pressure used for review.",
+    "audience_specific_reconstruction": "What that audience should reconstruct from the final surface.",
+    "cognitive_effect_evidence": "Quote four or more exact words from one final line and explicitly name the useful audience effect or action. Use decision or trust or inference or movement only when that is the actual reader change.",
+    "effort_fit_judgment": "Name why the surface fits the reader effort this audience can spend.",
+    "misread_handled": "Name the audience-specific wrong frame the final prevents.",
+    "remaining_relevance_risk": "Name any remaining relevance risk, or say not_applicable with a reason."
+  },
+  "reader_oracle": {
+    "evaluator_mode": "independent_cold_reader_review",
+    "evaluator_independence": "Name the fresh subagent or independent reader setup. Say what they saw and what context was withheld.",
+    "evaluator_artifact_path": "Absolute path to the independent cold-reader review note containing final-only or without-grounding evidence and PASS or REDRAFT.",
+    "final_seen_without_grounding": "Describe the cold final-surface inspection without grounding.",
+    "reader_reconstruction": "Write as A reader reconstructs: then state what the final surface alone lets the reader infer and what action follows.",
+    "intended_movement_match": "Compare the reader reconstruction to the intended movement, surface encounter, and selected route.",
+    "user_voice_positive_evidence": [
+      "Copy a four-word or longer exact span from one visible line that sounds like the user voice under pressure, not a label."
+    ],
+    "final_quality_positive_evidence": [
+      "Copy four or more exact words from one visible line, or name one artifact moment where the final creates reader movement."
+    ],
+    "artifact_reader_path_evidence": "For artifacts, how first perception becomes visible action; otherwise say not_applicable and why.",
+    "failure_or_redraft_decision": "Whether the final passed cold-reader reconstruction or what must be redrafted."
+  },
+  "artifact_inspection": {
+    "artifact_requested": false,
+    "artifact_path": "Absolute artifact path when artifact_requested is true.",
+    "inspection_artifact_path": "Absolute path to the artifact inspection note or QA output when artifact_requested is true.",
+    "render_or_open_result": "Use direct proof language. State what direct inspection proved about visible fit, readable movement, or no clipping.",
+    "visual_quality_evidence": "Judge whether visible craft makes first contact become readable proof and action.",
+    "visible_copy_voice_evidence": "Quote visible UI or artifact copy and judge whether it sounds like the user's source mechanism rather than generic app language.",
+    "visible_copy_objection": "Name the strongest skeptical cold-reader objection to the visible copy. Say PASS only if the words create a positive source mechanism, not merely because they avoid bad app language; otherwise say REDRAFT and name the repair.",
+    "reader_path_visible": "How the artifact makes the intended reader path visible without needing process notes.",
+    "medium_craft_evidence": "How the medium carries the movement through layout or state rather than merely hosting copy.",
+    "screenshot_path": "Absolute screenshot path when artifact_requested is true.",
+    "mobile_390_result": "What narrow mobile inspection proved for responsive surfaces.",
+    "mobile_first_screen_composition": "For responsive artifacts, inspect the 390px first screen as composition. The judgment should say whether the opening feels intentionally designed before controls become work. Otherwise say not_applicable and why.",
+    "surface_movement": "How the artifact itself carries the reader movement."
+  },
+  "warnings": [
+    {
+      "validator_warning": "Warning name or not_applicable.",
+      "judgment": "Say fixed or safe after inspection, then name the reader-facing reason."
+    }
+  ]
+}

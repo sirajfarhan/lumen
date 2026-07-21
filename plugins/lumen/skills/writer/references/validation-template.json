@@ -1,0 +1,78 @@
+{
+  "version": "writer-validation-v1",
+  "gates": {
+    "groundingQuality": {
+      "passed": true,
+      "score": 100,
+      "evidence": "How the selected route and eligible source shaped this final.",
+      "weakestPoint": "The narrowest remaining risk after inspection."
+    },
+    "finalArtifactQuality": {
+      "passed": true,
+      "score": 100,
+      "evidence": "The visible final moment that completes the requested surface.",
+      "weakestPoint": "The narrowest remaining risk after inspection."
+    },
+    "transferQuality": {
+      "passed": true,
+      "score": 100,
+      "evidence": "How the final learned from grounding without copying its language.",
+      "weakestPoint": "The narrowest remaining risk after inspection."
+    },
+    "userVoice": {
+      "passed": true,
+      "score": 100,
+      "evidence": "The visible line where the active user's reasoning or rhythm survives.",
+      "weakestPoint": "The narrowest remaining risk after inspection."
+    },
+    "readerEncounterQuality": {
+      "passed": true,
+      "score": 100,
+      "evidence": "How a cold reader can follow the surface from first contact to landing.",
+      "weakestPoint": "The narrowest remaining risk after inspection."
+    },
+    "audienceRelevance": {
+      "passed": true,
+      "score": 100,
+      "evidence": "Why the detail, effort, and landing fit this intended reader.",
+      "weakestPoint": "The narrowest remaining risk after inspection."
+    }
+  },
+  "summary": {
+    "weakestArea": "The exact validation area with the weakest current evidence.",
+    "readinessScore": 100,
+    "releaseDecision": "pass"
+  },
+  "transfer": {
+    "routeUsed": "relevance",
+    "finalEvidence": [],
+    "movementMatch": "How exact spans from the current final prove the intended movement arrived.",
+    "residueVisible": false
+  },
+  "voiceTransfer": {
+    "sourceId": "The source grounding ledger id for the active voice evidence.",
+    "sourceMode": "attested",
+    "representativeHash": "Bounded hash for an approved private profile or sample. For a direct public sample, use representativeSpan instead and set sourceMode to direct.",
+    "verbatimRequired": false,
+    "transferredRelation": "The stance, reasoning order, uncertainty, or landing transferred from the evidence.",
+    "recomposedEvidence": []
+  },
+  "readerEncounter": {
+    "reconstruction": "What the final alone lets the intended reader infer.",
+    "path": "How attention moves from opening to landing.",
+    "audienceFit": "Why this path fits the reader's knowledge and effort."
+  },
+  "independentReview": {
+    "required": false,
+    "reviewer": "For standard, deep, or consequential work, identify the fresh reader who received only the final surface and minimal audience question.",
+    "inputBoundary": "What the reviewer was allowed to see.",
+    "reconstruction": "What that reader reconstructed without grounding or creation history.",
+    "decision": "pass"
+  },
+  "sourceAudit": {
+    "supportedSourceIds": [],
+    "unsupportedClaims": [],
+    "instructionResidue": false
+  },
+  "compression": null
+}
