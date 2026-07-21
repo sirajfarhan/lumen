@@ -178,6 +178,32 @@ When the skill teaches, builds intuition, or onboards a person into a capability
 
 Update the learner state after each answer. Match the next prompt to observed knowledge, question difficulty, and the language the learner used successfully. Preserve useful learner wording while it remains accurate; clarify it gently when it hides an important distinction. Use one small test at a time, and return to an earlier address when the response exposes a prerequisite gap. Do not treat agreement, confidence, exposure, or a completed onboarding form as proof of learning. Changing only numbers, names, or labels within the same example family proves retrieval, not transfer. A `transfer_confirmed` learning state requires the relation to survive a different domain, representation, or decision setting plus correction when needed, and the public evidence must name the source case, transfer case, changed dimension, and preserved relation. Full evidence coverage means that this learning cycle has the required transfer evidence; it does not mean permanent mastery or zero uncertainty. Acknowledge the demonstrated relation specifically rather than saying the learner has got or mastered the whole topic.
 
+## Make Every Skill Communicate Plainly
+
+Every skill you design or repair speaks to its user by one standard: each message gives the most understanding for the least effort the reader must spend, given what they already know. Hold every user-facing sentence the skill emits — setup questions, teaching turns, progress lines, repair notes — to these rules:
+
+- Name the user's actual thing, never a placeholder class such as "the artifact", "the work", or a bare "this".
+- Use ordinary words. Keep internal vocabulary — readiness, track, signal, artifact, evidence, proof, packet, validation, boundary, calibration — out of anything the user reads. Introduce a domain term only after the user's own words show it is shared ground.
+- When a question needs an idea the user may not hold, put one short, concrete, familiar situation before it. Supply that example yourself for a beginner; invite the user's own only once their words show relevant experience.
+- Ask one question at a time, each naming one decision the user can see the effect of. Never bundle two asks into one sentence.
+- State why in terms of what changes for the user's task, or say nothing — a generic reason reads as manipulation once the ask has any cost.
+- Report progress in the user's own countable units and name the next human-meaningful step. Never surface an internal score as "% complete", never contradict yourself, never speak of the reader in the third person.
+- Carry enough restatement that the referent and the ask both survive; terseness is not clarity.
+- Ask only when the user can answer, does not already have the answer in usable form, and the answer selects the next action.
+- Leave every setup or teaching turn a cheap way to say "I don't follow", and answer it by grounding the idea differently, never by repeating or escalating.
+
+Do not apply these rules to the skill's own instruction body, reference models, schemas, or safety rules — they govern reader-facing sentences only. When the skill is ready, submit its user-facing surfaces to Lumen for a plain-language check and repair anything Lumen returns before promotion.
+
+## Place The Skill In The System
+
+A skill is one part of a system, not a soloist. When you design a skill, state plainly what it consumes (what another skill would hand it), what it produces (what it hands on), and when another skill should run first. Record that placement so the system can use it.
+
+Prefer a single skill by default. A pre-step from another skill earns its cost only when it clearly improves the result — pulling one in when it does not help wastes effort and can pull the result off course. When a real handoff happens, pass only the finished public artifact between skills, let the skill that owns the final user-facing result lead, and record which skills contributed so the path stays traceable. When the skill runs on its own where a pre-step might have helped, record in one line why the direct approach was right.
+
+## Repair An Existing Skill
+
+Repairing a skill that communicates cryptically or acts as a soloist is the same loop you already use for artifacts, pointed at the skill's own surfaces. Take the skill's user-facing sentences, submit them to Lumen for the plain-language check, and apply exactly one primary fix per cycle in the skill's own task terms — name the sentence's gap, not the skill's competence — then submit again, until the surfaces pass. Do not rewrite the skill's instruction body or safety rules in this loop; repair only what a user reads. Preserve the skill's meaning: a repaired question must ask for the same thing, only plainly. Prove the repaired skill in development before promoting it, exactly as for a new one.
+
 ## Prove Installed Behavior In Development
 
 Source text is not installed behavior. Decide who owns the candidate before touching a registry:

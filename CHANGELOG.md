@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.61 — 2026-07-22
+
+**Skillsmith builds and repairs to a standard**
+
+- Every skill Skillsmith designs now follows one plain-communication standard: it names the user's actual thing, uses ordinary words, grounds a question before asking it, asks one thing at a time, and reports progress in the user's own terms.
+- Skillsmith places each skill in the system — declaring what it consumes, what it produces, and when another skill should run first — and prefers a single skill unless a pre-step clearly earns its cost.
+- Skillsmith can now repair an existing skill's cryptic user-facing messages, one fix at a time, while preserving what each message asks for.
+
 ## 0.2.60 — 2026-07-22
 
 **Skills work as a system**
