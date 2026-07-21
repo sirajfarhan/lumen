@@ -1,9 +1,9 @@
 ---
-name: lumen
+name: route
 description: Start here when you are not sure which Lumen skill fits, when a task needs more than one of them, or when you want to learn how one works. Picks the right skill for what you are actually trying to do, teaches it if you would rather understand it first, and checks the result through Lumen. Can also teach this skill when you want to learn it rather than use it.
 ---
 
-# lumen
+# route
 
 Use this skill when the user wants Lumen to teach or build intuition, choose the right wrapper skill, coordinate several Lumen-backed skills, prioritize a practical next action, or run a generated artifact through Lumen.
 

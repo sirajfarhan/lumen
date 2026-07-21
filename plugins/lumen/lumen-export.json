@@ -46,11 +46,12 @@
       "restoreOperation": "restore_plugin_upgrade"
     }
   },
-  "generatedAt": "2026-07-21T12:25:31.907Z",
+  "generatedAt": "2026-07-21T12:53:09.857Z",
   "skillInventory": [
     {
       "id": "lumen",
-      "name": "lumen",
+      "name": "route",
+      "dir": "route",
       "role": "orchestrator",
       "version": "0.2.58",
       "artifactType": "conversation",
@@ -59,6 +60,7 @@
     {
       "id": "skillsmith",
       "name": "skillsmith",
+      "dir": "skillsmith",
       "role": "skill",
       "version": "0.2.58",
       "artifactType": "skill-package",
@@ -67,6 +69,7 @@
     {
       "id": "writer",
       "name": "writer",
+      "dir": "writer",
       "role": "skill",
       "version": "0.2.58",
       "artifactType": "writer-bundle",
@@ -120,6 +123,7 @@
     {
       "id": "question-sharpener",
       "name": "question-sharpener",
+      "dir": "question-sharpener",
       "role": "skill",
       "version": "0.2.58",
       "artifactType": "inquiry-packet",
@@ -128,6 +132,7 @@
     {
       "id": "expert-research",
       "name": "expert-research",
+      "dir": "expert-research",
       "role": "skill",
       "version": "0.2.58",
       "artifactType": "research-report",
@@ -136,6 +141,7 @@
     {
       "id": "concept-visualizer",
       "name": "concept-visualizer",
+      "dir": "concept-visualizer",
       "role": "skill",
       "version": "0.2.58",
       "artifactType": "concept-visual-model",
@@ -144,6 +150,7 @@
     {
       "id": "web-builder",
       "name": "web-builder",
+      "dir": "web-builder",
       "role": "skill",
       "version": "0.2.58",
       "artifactType": "web-experience",

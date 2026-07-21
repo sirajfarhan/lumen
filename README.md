@@ -32,7 +32,7 @@ Fuller detail lives in [TRUST.md](./TRUST.md).
 
 ## Setup
 
-Skills run without an account and return unchecked output, while checking needs a key from [lumen.siraj.ai](https://lumen.siraj.ai) that the plugin asks for when required.
+Skills run without an account and return unchecked output, while checking needs a key — email [hello@siraj.ai](mailto:hello@siraj.ai) to request one — that the plugin asks for when required.
 
 ## Licence
 

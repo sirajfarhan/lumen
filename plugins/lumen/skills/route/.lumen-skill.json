@@ -4,9 +4,9 @@
   "adminCreated": true,
   "syncId": "lumen.skill.claude-code.lumen",
   "skillId": "lumen",
-  "name": "lumen",
+  "name": "route",
   "version": "0.2.58",
-  "sourceHash": "lph_0b57398c",
+  "sourceHash": "lph_396b2fdc",
   "packageVersion": "0.2.58",
   "publicChangeSummary": "Adds a plain-language disclosure block to every skill, ships cross-skill invocation to all six specialists, fixes a stale SKILL.md that froze concept-visualizer at 0.2.55, moves the public contract into references for ~55% smaller skills, and adds a real licence.",
   "runtimeProtocol": {
@@ -20,5 +20,5 @@
   "legacyIdentityAliases": [
     "lumen-validation"
   ],
-  "updatedAt": "2026-07-21T12:25:31.907Z"
+  "updatedAt": "2026-07-21T12:53:09.857Z"
 }
