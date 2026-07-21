@@ -5,10 +5,10 @@
   "syncId": "lumen.skill.claude-code.lumen",
   "skillId": "lumen",
   "name": "route",
-  "version": "0.2.58",
-  "sourceHash": "lph_396b2fdc",
-  "packageVersion": "0.2.58",
-  "publicChangeSummary": "Adds a plain-language disclosure block to every skill, ships cross-skill invocation to all six specialists, fixes a stale SKILL.md that froze concept-visualizer at 0.2.55, moves the public contract into references for ~55% smaller skills, and adds a real licence.",
+  "version": "0.2.59",
+  "sourceHash": "lph_a9f63019",
+  "packageVersion": "0.2.59",
+  "publicChangeSummary": "Renames the orchestrator skill to `route` (invoked lumen:route) so it no longer duplicates the plugin name in the skill list, and points every key and contact reference to hello@siraj.ai. Validation is unchanged.",
   "runtimeProtocol": {
     "id": "lumen-https",
     "version": 2,
@@ -20,5 +20,5 @@
   "legacyIdentityAliases": [
     "lumen-validation"
   ],
-  "updatedAt": "2026-07-21T12:53:09.857Z"
+  "updatedAt": "2026-07-21T13:11:09.356Z"
 }

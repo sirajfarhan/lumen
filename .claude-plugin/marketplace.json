@@ -7,14 +7,14 @@
   },
   "metadata": {
     "description": "Quality-checked skills for writing, research, and building.",
-    "version": "0.2.58"
+    "version": "0.2.59"
   },
   "plugins": [
     {
       "name": "lumen",
       "source": "./plugins/lumen",
       "description": "Six skills for writing, research, questions, diagrams, web builds, and skill-building — each checked for quality before the result reaches you.",
-      "version": "0.2.58",
+      "version": "0.2.59",
       "author": {
         "name": "Siraj",
         "email": "hello@siraj.ai"

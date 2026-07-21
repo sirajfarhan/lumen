@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.59 — 2026-07-21
+
+**Fixes**
+
+- Renamed the orchestrator skill from `lumen` to `route`, so the skill list no longer shows a second "lumen" next to the plugin of the same name. It is now invoked as `/lumen:route`. Its server skill id is unchanged, so validation and existing readiness records are unaffected.
+
+**Contact**
+
+- Every place that pointed users to `lumen.siraj.ai` for a key now points to `hello@siraj.ai`: the README, the marketplace description, and the plugin's not-connected message. The plugin homepage is now `https://siraj.ai`.
+
 ## 0.2.58 — 2026-07-21
 
 **Transparency**
