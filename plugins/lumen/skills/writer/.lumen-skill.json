@@ -8,7 +8,7 @@
   "version": "0.2.60",
   "sourceHash": "lph_4430ce7b",
   "packageVersion": "0.2.60",
-  "publicChangeSummary": "Renames the orchestrator skill to `route` (invoked lumen:route) so it no longer duplicates the plugin name in the skill list, and points every key and contact reference to hello@siraj.ai. Validation is unchanged.",
+  "publicChangeSummary": "Makes the skills work as a system: each specialist now knows when a sibling should run first (a page build considers a layout pass, decision research considers sharpening the question), and the router runs a single skill by default and composes only when it clearly helps. Skill text is now host-neutral so it reads the same on every host.",
   "runtimeProtocol": {
     "id": "lumen-https",
     "version": 2,
@@ -20,5 +20,5 @@
   "legacyIdentityAliases": [
     "lumen-validation"
   ],
-  "updatedAt": "2026-07-21T18:31:00.290Z"
+  "updatedAt": "2026-07-21T18:32:00.029Z"
 }

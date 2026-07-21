@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.60 — 2026-07-22
+
+**Skills work as a system**
+
+- Each specialist now carries guidance on when another skill should run first: a page build considers a layout/concept pass before building, and decision research considers sharpening the question when the decision is still unformed. The result is recorded so the contribution is traceable.
+- The router runs a single skill by default and composes only when a pre-step clearly earns its cost, rather than stacking skills a task does not need.
+
+**Host-neutral**
+
+- Removed host-specific wording from skill instructions; each installed copy names its own host through the existing per-host mechanism, so the source reads the same everywhere.
+
 ## 0.2.59 — 2026-07-21
 
 **Fixes**
