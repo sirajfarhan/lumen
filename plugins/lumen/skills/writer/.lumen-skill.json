@@ -5,9 +5,9 @@
   "syncId": "lumen.skill.claude-code.writer",
   "skillId": "writer",
   "name": "writer",
-  "version": "0.2.59",
-  "sourceHash": "lph_f5699e27",
-  "packageVersion": "0.2.59",
+  "version": "0.2.60",
+  "sourceHash": "lph_4430ce7b",
+  "packageVersion": "0.2.60",
   "publicChangeSummary": "Renames the orchestrator skill to `route` (invoked lumen:route) so it no longer duplicates the plugin name in the skill list, and points every key and contact reference to hello@siraj.ai. Validation is unchanged.",
   "runtimeProtocol": {
     "id": "lumen-https",
@@ -20,5 +20,5 @@
   "legacyIdentityAliases": [
     "lumen-validation"
   ],
-  "updatedAt": "2026-07-21T13:11:09.347Z"
+  "updatedAt": "2026-07-21T18:31:00.290Z"
 }

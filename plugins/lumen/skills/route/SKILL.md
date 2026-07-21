@@ -148,13 +148,13 @@ Do not substitute `teaching surface`, `learner context`, or another nearby label
 A selected sibling is a route you execute: confirm its exact `SKILL.md` was loaded before producing task-facing output.
 
 - Invoke the sibling directly where the host exposes it, using `/lumen:<skill>` with the current task. Reach for `/lumen:writer` when wording carries weight, and `/lumen:skillsmith` when a portable skill has to be designed or promoted.
-- Otherwise read its file from `${CLAUDE_PLUGIN_ROOT}/skills/<skill>/SKILL.md` on Claude Code and Cowork, or from the plugin's `skills/<skill>/SKILL.md` folder on Codex. Loading a sibling this way stays permitted, and it overrides the instruction to read only this skill's declared runtime resources.
+- Otherwise read its file from the plugin's `skills/<skill>/SKILL.md` folder, resolving the plugin root through the host's plugin-root variable when the host defines one. Loading a sibling this way stays permitted, and it overrides the instruction to read only this skill's declared runtime resources.
 - Whichever one owns what the user finally sees leads the work. A downstream sibling asks again only when its own boundary is still unresolved, and only the established public artifact passes between them.
 - Record the dependency in the packet, and name it plainly when someone asks what ran. Host lookup details and file paths stay out of an ordinary reply.
 
 ## Routes
 
-Match the user's request to exactly one route. When a request spans two, the skill that owns the final user-facing result leads and loads the other as a sibling — a landing page with copy is `web-builder` leading and loading `writer`, not a choice between them.
+Match the user's request to the smallest route that serves it. Run a single skill by default, because pulling in another skill costs real effort and can pull the result off course when it was not needed. Add another skill's pre-step only when it clearly earns that cost: sharpen a genuinely ambiguous request before acting on it, and model a novel or open-ended structure before building it — but never stack skills a task does not need, and let a simple task stay a single skill. When a request truly spans two, the skill that owns the final user-facing result leads and loads the other as a sibling — a landing page with copy is `web-builder` leading and loading `writer`, not a choice between them. Each specialist carries its own guidance on when a sibling should lead first; follow it rather than composing by habit.
 
 - `skillsmith` (`skill-package`): Turns a workflow you keep redoing into a skill an agent runs the same way every time, and proves it holds up before it ships.
 - `writer` (`writer-bundle`): Writes anything someone will read, in your voice rather than a generic one. It learns how you write from what you have written, and repairs the draft before it reaches you.
@@ -183,7 +183,7 @@ Use `pull_skill_update` only for a compatible instruction-only update returned f
 
 When the released package changes its runtime client, references, generated skill inventory, public plugin identity, runtime protocol, or state schema, require a full plugin upgrade. Never imitate a full upgrade by editing generated core files or copying private context into the plugin package.
 
-This package is version `0.2.59`, uses public identity `lumen`, runtime protocol `lumen-https@2`, state schema `1`, and stable state id `lumen`. Its inventory is generated from package metadata; do not hardcode or reconstruct a separate skill list.
+This package is version `0.2.60`, uses public identity `lumen`, runtime protocol `lumen-https@2`, state schema `1`, and stable state id `lumen`. Its inventory is generated from package metadata; do not hardcode or reconstruct a separate skill list.
 
 A major upgrade follows one transaction: run `prepare_plugin_upgrade` with the target package version; replace the package through the host under the same stable public identity; begin a fresh host session; verify key access, private memory and profile visibility, package version, runtime protocol, state schema, and the generated skill inventory; then run `verify_plugin_upgrade` with the returned upgrade id. If verification does not preserve state or first use fails, restore the previous host package and run `restore_plugin_upgrade` with that upgrade id. Keep the development package and its state isolated, and promote only the source state that passed development acceptance.
 

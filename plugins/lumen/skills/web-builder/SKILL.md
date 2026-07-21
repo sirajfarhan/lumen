@@ -135,9 +135,15 @@ For a source handoff, use this signal shape:
 When this workflow needs another capability from the package, load it and follow it. Approximating from memory yields prose that resembles the real thing while carrying none of the evidence the packet requires, and an imitation of `writer` is not `writer`.
 
 - Invoke the sibling directly where the host exposes it, using `/lumen:<skill>` with the current task. Reach for `/lumen:writer` when wording carries weight, and `/lumen:skillsmith` when a portable skill has to be designed or promoted.
-- Otherwise read its file from `${CLAUDE_PLUGIN_ROOT}/skills/<skill>/SKILL.md` on Claude Code and Cowork, or from the plugin's `skills/<skill>/SKILL.md` folder on Codex. Loading a sibling this way stays permitted, and it overrides the instruction to read only this skill's declared runtime resources.
+- Otherwise read its file from the plugin's `skills/<skill>/SKILL.md` folder, resolving the plugin root through the host's plugin-root variable when the host defines one. Loading a sibling this way stays permitted, and it overrides the instruction to read only this skill's declared runtime resources.
 - Whichever one owns what the user finally sees leads the work. A downstream sibling asks again only when its own boundary is still unresolved, and only the established public artifact passes between them.
 - Record the dependency in the packet, and name it plainly when someone asks what ran. Host lookup details and file paths stay out of an ordinary reply.
+## When a Sibling Leads First
+
+Run this skill on its own by default. Another skill's pre-step earns its cost only in specific cases — pulling one in when it does not help wastes effort and can pull the result off course:
+
+- Consider running `concept-visualizer` first only when novel layout OR more than one plausible structure — a standard hero+CTA page does not qualify — otherwise work directly. When you do run it, load it as described in Sibling Skill Loading, follow its `concept-model` as the structure this work takes, and record the handoff in the packet's composition record. When you work solo, record in one line why the direct approach was right.
+
 
 ## Resources
 
