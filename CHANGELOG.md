@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.63 — 2026-07-22
+
+**Fixes**
+
+- Removed an internal wrapper term ("readiness score") from the Writer reference model so shipped content stays in plain, public language.
+
 ## 0.2.62 — 2026-07-22
 
 **Skills review their own messages**

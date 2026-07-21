@@ -1,7 +1,7 @@
 {
   "pluginName": "lumen",
   "canonicalPluginName": "lumen",
-  "packageVersion": "0.2.62",
+  "packageVersion": "0.2.63",
   "publicPluginIdentity": "lumen",
   "target": "prod",
   "harness": "claude-code",
@@ -46,14 +46,14 @@
       "restoreOperation": "restore_plugin_upgrade"
     }
   },
-  "generatedAt": "2026-07-21T18:46:36.277Z",
+  "generatedAt": "2026-07-21T19:00:24.087Z",
   "skillInventory": [
     {
       "id": "lumen",
       "name": "route",
       "dir": "route",
       "role": "orchestrator",
-      "version": "0.2.62",
+      "version": "0.2.63",
       "artifactType": "conversation",
       "syncId": "lumen.skill.claude-code.lumen"
     },
@@ -62,7 +62,7 @@
       "name": "skillsmith",
       "dir": "skillsmith",
       "role": "skill",
-      "version": "0.2.62",
+      "version": "0.2.63",
       "artifactType": "skill-package",
       "syncId": "lumen.skill.claude-code.skillsmith"
     },
@@ -71,7 +71,7 @@
       "name": "writer",
       "dir": "writer",
       "role": "skill",
-      "version": "0.2.62",
+      "version": "0.2.63",
       "artifactType": "writer-bundle",
       "syncId": "lumen.skill.claude-code.writer",
       "memoryContracts": {
@@ -125,7 +125,7 @@
       "name": "question-sharpener",
       "dir": "question-sharpener",
       "role": "skill",
-      "version": "0.2.62",
+      "version": "0.2.63",
       "artifactType": "inquiry-packet",
       "syncId": "lumen.skill.claude-code.question-sharpener"
     },
@@ -134,7 +134,7 @@
       "name": "expert-research",
       "dir": "expert-research",
       "role": "skill",
-      "version": "0.2.62",
+      "version": "0.2.63",
       "artifactType": "research-report",
       "syncId": "lumen.skill.claude-code.expert-research"
     },
@@ -143,7 +143,7 @@
       "name": "concept-visualizer",
       "dir": "concept-visualizer",
       "role": "skill",
-      "version": "0.2.62",
+      "version": "0.2.63",
       "artifactType": "concept-visual-model",
       "syncId": "lumen.skill.claude-code.concept-visualizer"
     },
@@ -152,7 +152,7 @@
       "name": "web-builder",
       "dir": "web-builder",
       "role": "skill",
-      "version": "0.2.62",
+      "version": "0.2.63",
       "artifactType": "web-experience",
       "syncId": "lumen.skill.claude-code.web-builder"
     }
