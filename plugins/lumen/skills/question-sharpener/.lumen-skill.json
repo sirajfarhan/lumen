@@ -5,10 +5,10 @@
   "syncId": "lumen.skill.claude-code.question-sharpener",
   "skillId": "question-sharpener",
   "name": "question-sharpener",
-  "version": "0.2.61",
-  "sourceHash": "lph_5c265e71",
-  "packageVersion": "0.2.61",
-  "publicChangeSummary": "Skillsmith now builds skills that fit the system and speak plainly: every skill it designs communicates in the user's own words, declares when another skill should run first, and Skillsmith can repair an existing skill's cryptic messages while keeping their meaning.",
+  "version": "0.2.62",
+  "sourceHash": "lph_8af7bba7",
+  "packageVersion": "0.2.62",
+  "publicChangeSummary": "Every skill now reviews its own questions and teaching turns before you see them: a fresh reviewer checks each message against plain-communication criteria shipped with the skill, applies one fix at a time, and records the review so quality is auditable. Simple quick tasks skip the review entirely.",
   "runtimeProtocol": {
     "id": "lumen-https",
     "version": 2,
@@ -20,5 +20,5 @@
   "legacyIdentityAliases": [
     "lumen-validation"
   ],
-  "updatedAt": "2026-07-21T18:35:44.580Z"
+  "updatedAt": "2026-07-21T18:46:36.269Z"
 }

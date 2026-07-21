@@ -183,7 +183,7 @@ Use `pull_skill_update` only for a compatible instruction-only update returned f
 
 When the released package changes its runtime client, references, generated skill inventory, public plugin identity, runtime protocol, or state schema, require a full plugin upgrade. Never imitate a full upgrade by editing generated core files or copying private context into the plugin package.
 
-This package is version `0.2.61`, uses public identity `lumen`, runtime protocol `lumen-https@2`, state schema `1`, and stable state id `lumen`. Its inventory is generated from package metadata; do not hardcode or reconstruct a separate skill list.
+This package is version `0.2.62`, uses public identity `lumen`, runtime protocol `lumen-https@2`, state schema `1`, and stable state id `lumen`. Its inventory is generated from package metadata; do not hardcode or reconstruct a separate skill list.
 
 A major upgrade follows one transaction: run `prepare_plugin_upgrade` with the target package version; replace the package through the host under the same stable public identity; begin a fresh host session; verify key access, private memory and profile visibility, package version, runtime protocol, state schema, and the generated skill inventory; then run `verify_plugin_upgrade` with the returned upgrade id. If verification does not preserve state or first use fails, restore the previous host package and run `restore_plugin_upgrade` with that upgrade id. Keep the development package and its state isolated, and promote only the source state that passed development acceptance.
 

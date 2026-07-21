@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.62 — 2026-07-22
+
+**Skills review their own messages**
+
+- Each skill now ships a quality-judge reference: before a setup question or teaching turn reaches you, a fresh reviewer checks it against plain-communication criteria (does it name your actual thing, ask one question, ground the idea first), applies at most one fix per cycle, and records the review.
+- The review is skipped for short single-turn tasks, so quick work stays fast.
+- Reviews are recorded alongside each validation so message quality is auditable over time.
+
 ## 0.2.61 — 2026-07-22
 
 **Skillsmith builds and repairs to a standard**

@@ -144,6 +144,10 @@ Run this skill on its own by default. Another skill's pre-step earns its cost on
 
 - Consider running `concept-visualizer` first only when novel layout OR more than one plausible structure — a standard hero+CTA page does not qualify — otherwise work directly. When you do run it, load it as described in Sibling Skill Loading, follow its `concept-model` as the structure this work takes, and record the handoff in the packet's composition record. When you work solo, record in one line why the direct approach was right.
 
+## Surface Review
+
+Before showing the user a setup question, teaching turn, or repair note, review it against `references/quality-judge.md` beside this skill. Use a fresh subagent as the reviewer where the host provides one; otherwise run the review as its own separate pass. Apply the returned primary fix and re-review, at most three times; a criterion that passed stays passed. Skip this review for a short single-turn task with no setup question or teaching turn, and never review instruction text, schemas, or safety rules. Attach the compact `surface review` line from the judge reference to the validation packet. The review is evidence for Lumen's audit; official readiness still comes only from a current Lumen run.
+
 
 ## Resources
 

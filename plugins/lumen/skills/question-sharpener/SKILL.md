@@ -134,6 +134,10 @@ When this workflow needs another capability from the package, load it and follow
 - Otherwise read its file from the plugin's `skills/<skill>/SKILL.md` folder, resolving the plugin root through the host's plugin-root variable when the host defines one. Loading a sibling this way stays permitted, and it overrides the instruction to read only this skill's declared runtime resources.
 - Whichever one owns what the user finally sees leads the work. A downstream sibling asks again only when its own boundary is still unresolved, and only the established public artifact passes between them.
 - Record the dependency in the packet, and name it plainly when someone asks what ran. Host lookup details and file paths stay out of an ordinary reply.
+## Surface Review
+
+Before showing the user a setup question, teaching turn, or repair note, review it against `references/quality-judge.md` beside this skill. Use a fresh subagent as the reviewer where the host provides one; otherwise run the review as its own separate pass. Apply the returned primary fix and re-review, at most three times; a criterion that passed stays passed. Skip this review for a short single-turn task with no setup question or teaching turn, and never review instruction text, schemas, or safety rules. Attach the compact `surface review` line from the judge reference to the validation packet. The review is evidence for Lumen's audit; official readiness still comes only from a current Lumen run.
+
 
 ## Resources
 
