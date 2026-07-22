@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.66 — 2026-07-22
+
+**Robustness (from small-model testing)**
+
+- Broke the dense Start Boundary instruction block into readable sections, so a smaller or faster model can find the rule that decides how to handle a request instead of missing it in a wall of text.
+- Teaching turns now state what the learner's answer will shape next, so the payoff is visible rather than left implicit.
+- Replaced an abstract Skillsmith teaching example with a plain everyday one (a follow-up note after any meeting), so the first teaching turn cannot lift a jargon-y phrase verbatim.
+
 ## 0.2.65 — 2026-07-22
 
 **Every prompt tells you how to answer it**

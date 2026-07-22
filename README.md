@@ -38,4 +38,4 @@ Skills run without an account and return unchecked output, while checking needs 
 
 Proprietary, with terms in [LICENSE.md](./LICENSE.md).
 
-Version 0.2.65, with changes listed in [CHANGELOG.md](./CHANGELOG.md).
+Version 0.2.66, with changes listed in [CHANGELOG.md](./CHANGELOG.md).

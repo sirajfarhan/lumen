@@ -5,10 +5,10 @@
   "syncId": "lumen.skill.claude-code.writer",
   "skillId": "writer",
   "name": "writer",
-  "version": "0.2.65",
-  "sourceHash": "lph_3a980b00",
-  "packageVersion": "0.2.65",
-  "publicChangeSummary": "Every prompt now makes clear how to answer it — a question shows the shape of a good answer, and a request to do something (like granting access) names the action and how to proceed. The permission message is clearer, the orchestrator now self-reviews its teaching turns like the specialists do, and the leftover in-skill update instructions are gone.",
+  "version": "0.2.66",
+  "sourceHash": "lph_ddec20f0",
+  "packageVersion": "0.2.66",
+  "publicChangeSummary": "Robustness fixes from testing skills with smaller models: the dense Start Boundary is now broken into readable sections so the routing rules are easy to find, teaching turns now state what your answer shapes, and the Skillsmith teaching example is a plain everyday one instead of an abstract phrase.",
   "runtimeProtocol": {
     "id": "lumen-https",
     "version": 2,
@@ -20,5 +20,5 @@
   "legacyIdentityAliases": [
     "lumen-validation"
   ],
-  "updatedAt": "2026-07-22T04:51:23.001Z"
+  "updatedAt": "2026-07-22T05:01:09.258Z"
 }
