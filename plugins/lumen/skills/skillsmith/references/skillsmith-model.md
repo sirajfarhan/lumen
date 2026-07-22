@@ -241,28 +241,7 @@ Keep private state outside the replaceable plugin tree and address it through a 
 
 Do not solve customization by editing a managed `SKILL.md` or shipping a filled personal reference inside the core package. Core skills remain replaceable. Put an explicitly approved skill profile or narrower durable preference through `capture_lumen_preference`; use `store_profile` only for an explicitly requested local-only profile or a controlled migration stage that does not claim approved cloud preference status, and always pass `explicitUserApproval: true`. Load the resulting private context at runtime when it transfers, and let current intent override it. User-created skills remain user-owned and may be edited normally; only the Lumen-managed product layer follows the immutable-core boundary.
 
-Classify every managed update before release:
-
-- an **instruction pull** may update only one skill's generated instructions and managed metadata when runtime protocol, state schema, references, inventory, and public identity remain compatible;
-- a **plugin upgrade** is required when runtime code, references, inventory, plugin identity, runtime protocol, or state schema changes.
-
-Never use an instruction pull to approximate a package upgrade.
-
-Keep remote access equally explicit. A portable runtime should expose one public HTTPS origin for its service boundary, including secondary operations such as memory. Let the host's standard permission flow handle the first request. If access is denied, return a recoverable permission state naming only the required host. Prefer the host's native permission action so the user can approve that host directly; use one short fallback instruction only when the host cannot surface an actionable permission dialog. Retry the same operation once after approval. Do not hide a blocked connection behind a degraded cloud status, ask for unrestricted execution, or change the user's global sandbox settings. Update discovery belongs at the normal connection boundary and is paced by server state: normal releases wait for a natural task boundary, critical releases may pause, and the declared update kind chooses instruction pull or full package upgrade.
-
-## Make Major Upgrades Transactional
-
-A major upgrade is one state transition, not a delete-and-reinstall suggestion:
-
-```text
-accepted development release -> prepare -> host replacement -> fresh-session verification -> commit or rollback
-```
-
-`prepare_plugin_upgrade` records the target package version and creates a recoverable snapshot of private state before host replacement. The host then replaces the package under the same stable public plugin identity. A fresh session checks the exact installed version and skill inventory together with key access, private memory, approved profiles, settings, and first-use behavior, then calls `verify_plugin_upgrade` with the prepared upgrade id. Retire a legacy identity only after that verification passes. If state or first-use behavior fails, restore the previous host package and call `restore_plugin_upgrade` with the same upgrade id before more work continues.
-
-The model may coordinate the upgrade and perform host actions the environment permits, but it must not claim completion from a copied archive or installer exit code alone. Ask the user only for an unavoidable host confirmation, explain that action in ordinary language, and continue verification afterward. Keep internal package paths, storage locations, and migration mechanics out of the user-facing exchange.
-
-Build this upgrade contract from generated package metadata: package version, runtime protocol, state schema, stable state id, skill inventory, and declared legacy aliases. Do not hardcode a list of product skills in upgrade scripts or instructions. A full release must first pass in the isolated development plugin; production receives the exact accepted source state and then repeats first-use verification.
+Keep remote access equally explicit. A portable runtime should expose one public HTTPS origin for its service boundary, including secondary operations such as memory. Let the host's standard permission flow handle the first request. If access is denied, return a recoverable permission state naming only the required host. Prefer the host's native permission action so the user can approve that host directly; use one short fallback instruction only when the host cannot surface an actionable permission dialog. Retry the same operation once after approval. Do not hide a blocked connection behind a degraded cloud status, ask for unrestricted execution, or change the user's global sandbox settings.
 
 ## Promote The Accepted System
 
@@ -271,7 +250,7 @@ Promote only the source state that passed development:
 1. compile the production plugin with its stable public name and production services;
 2. validate every host package and exact zip;
 3. deploy required backend changes;
-4. register only skills explicitly accepted as managed product skills, then push managed updates while preserving user-owned references and memory;
+4. register only skills explicitly accepted as managed product skills, then publish the update to the distribution source while preserving user-owned references and memory;
 5. install or pull production;
 6. run the real first-use path with a fresh key and isolated local state;
 7. share only after those checks pass.

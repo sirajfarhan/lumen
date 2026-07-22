@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.2.65 — 2026-07-22
+
+**Every prompt tells you how to answer it**
+
+- Added a response-path rule to the communication standard: any message that needs a reply now shows how to give it — a question makes the shape of a good answer recognizable, and a message that asks you to do something (grant access, upload, confirm) names the action and the simplest way to proceed. It applies everywhere, including permission prompts.
+- Rewrote the network-permission message from "Allow access to <host>, then I'll continue" to a line that says plainly what to do and how to resume.
+- The orchestrator now self-reviews its own questions and teaching turns against the same quality criteria as the specialists (it was the one skill without that check).
+
+**Cleanup**
+
+- Removed the last of the in-skill update/upgrade wording (contract and Skillsmith model) so skills stay silent on updates the marketplace already handles.
+
 ## 0.2.64 — 2026-07-22
 
 **Leaner skills**

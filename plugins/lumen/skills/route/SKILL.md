@@ -152,6 +152,10 @@ A selected sibling is a route you execute: confirm its exact `SKILL.md` was load
 - Whichever one owns what the user finally sees leads the work. A downstream sibling asks again only when its own boundary is still unresolved, and only the established public artifact passes between them.
 - Record the dependency in the packet, and name it plainly when someone asks what ran. Host lookup details and file paths stay out of an ordinary reply.
 
+## Surface Review
+
+Before showing the user a setup question, teaching turn, or repair note, review it against `references/quality-judge.md` beside this skill. Use a fresh subagent as the reviewer where the host provides one; otherwise run the review as its own separate pass. Apply the returned primary fix and re-review, at most three times; a criterion that passed stays passed. Skip this review for a short single-turn task with no setup question or teaching turn, and never review instruction text, schemas, or safety rules. Attach the compact `surface review` line from the judge reference to the validation packet. The review is evidence for Lumen's audit; official readiness still comes only from a current Lumen run.
+
 ## Routes
 
 Match the user's request to the smallest route that serves it. Run a single skill by default, because pulling in another skill costs real effort and can pull the result off course when it was not needed. Add another skill's pre-step only when it clearly earns that cost: sharpen a genuinely ambiguous request before acting on it, and model a novel or open-ended structure before building it — but never stack skills a task does not need, and let a simple task stay a single skill. When a request truly spans two, the skill that owns the final user-facing result leads and loads the other as a sibling — a landing page with copy is `web-builder` leading and loading `writer`, not a choice between them. Each specialist carries its own guidance on when a sibling should lead first; follow it rather than composing by habit.

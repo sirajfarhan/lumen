@@ -60,6 +60,14 @@ Example that FAILS this criterion:
 
 > As stated before: name any limit that would change the work.
 
+### answerable
+
+Can the user tell how to respond — what a good answer looks like, or what to actually do to proceed — without guessing? A question shows the shape of a good answer (its choices or one example); a message that asks the user to do something (grant access, upload, confirm) names the action and the simplest way to move forward.
+
+Example that FAILS this criterion:
+
+> Lumen needs permission to connect securely. Allow access to https://lumen-api.siraj.ai, then I'll continue.
+
 ### viewer-recognizable
 
 Is the question asked through something the intended viewer could actually see or point at in the visual, rather than through design vocabulary?

@@ -68,22 +68,6 @@ Example that FAILS this criterion:
 
 > Lumen needs permission to connect securely. Allow access to https://lumen-api.siraj.ai, then I'll continue.
 
-### decision-anchored
-
-Is the question tied to the decision the research must serve — would the answer change what gets recommended?
-
-Example that FAILS this criterion:
-
-> What topics would you like the research to cover?
-
-### solo-justified
-
-If this run skipped a question-sharpening pass, does the recorded one-line reason hold for THIS decision — was it genuinely already well-formed?
-
-Example that FAILS this criterion:
-
-> Skipped sharpening because the request was clear. (The request was "help me pick a tool for my team".)
-
 ## Record
 
 Attach a compact review line to the validation packet as an artifact named `surface review`: each criterion id with its final verdict, the number of cycles used, and `flagged` or `clean`. The review is evidence for the server's audit lane; it never replaces the server's own checks, and official readiness still comes only from a current Lumen run.

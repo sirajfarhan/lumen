@@ -5,10 +5,10 @@
   "syncId": "lumen.skill.claude-code.lumen",
   "skillId": "lumen",
   "name": "route",
-  "version": "0.2.64",
-  "sourceHash": "lph_00f28932",
-  "packageVersion": "0.2.64",
-  "publicChangeSummary": "Removed the in-skill update and upgrade instructions. The plugin now updates itself from its marketplace source, and your keys, memory, and settings live outside the skill files so they carry over automatically — leaving each skill leaner and focused on the work.",
+  "version": "0.2.65",
+  "sourceHash": "lph_f14cc1d4",
+  "packageVersion": "0.2.65",
+  "publicChangeSummary": "Every prompt now makes clear how to answer it — a question shows the shape of a good answer, and a request to do something (like granting access) names the action and how to proceed. The permission message is clearer, the orchestrator now self-reviews its teaching turns like the specialists do, and the leftover in-skill update instructions are gone.",
   "runtimeProtocol": {
     "id": "lumen-https",
     "version": 2,
@@ -20,5 +20,5 @@
   "legacyIdentityAliases": [
     "lumen-validation"
   ],
-  "updatedAt": "2026-07-22T02:08:59.586Z"
+  "updatedAt": "2026-07-22T04:51:23.012Z"
 }
