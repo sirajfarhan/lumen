@@ -5,10 +5,10 @@
   "syncId": "lumen.skill.claude-code.web-builder",
   "skillId": "web-builder",
   "name": "web-builder",
-  "version": "0.2.63",
-  "sourceHash": "lph_62aee3a9",
-  "packageVersion": "0.2.63",
-  "publicChangeSummary": "Every skill now reviews its own questions and teaching turns before you see them: a fresh reviewer checks each message against plain-communication criteria shipped with the skill, applies one fix at a time, and records the review so quality is auditable. Simple quick tasks skip the review entirely.",
+  "version": "0.2.64",
+  "sourceHash": "lph_e2f96e88",
+  "packageVersion": "0.2.64",
+  "publicChangeSummary": "Removed the in-skill update and upgrade instructions. The plugin now updates itself from its marketplace source, and your keys, memory, and settings live outside the skill files so they carry over automatically — leaving each skill leaner and focused on the work.",
   "runtimeProtocol": {
     "id": "lumen-https",
     "version": 2,
@@ -20,5 +20,5 @@
   "legacyIdentityAliases": [
     "lumen-validation"
   ],
-  "updatedAt": "2026-07-21T19:00:24.085Z"
+  "updatedAt": "2026-07-22T02:08:59.585Z"
 }

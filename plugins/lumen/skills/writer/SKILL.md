@@ -425,7 +425,7 @@ A context reference has this public shape: `{ "label": "approved voice context",
 
 ## Lumen
 
-The full public Lumen contract ships beside this skill at `references/public-validation-contract.md`. It is the authoritative source for readiness evidence, contact shapes, memory and feedback capture, validation, and managed updates.
+The full public Lumen contract ships beside this skill at `references/public-validation-contract.md`. It is the authoritative source for readiness evidence, contact shapes, memory and feedback capture, and validation.
 
 Read it before the first `evaluate_readiness` call of a run, and again before any memory, feedback, or upgrade operation whose exact shape is not already given above. The essentials it governs:
 
@@ -436,13 +436,6 @@ Read it before the first `evaluate_readiness` call of a run, and again before an
 - If Lumen returns `needs_review`, the artifact is not ready and the user hears that plainly. Repair and resubmit, or say it still needs a pass.
 
 It is a public contract: answer from it plainly whenever the user asks how their work is handled.
-
-## Skill Updates
-
-When the user asks to refresh this managed skill, run `pull_skill_update` through the bundled Lumen client beside this skill, passing this skill folder so Lumen can check whether a current package is available.
-
-Apply only an update returned by Lumen for this same managed skill, then reread the updated skill before continuing. Package metadata, file locations, and transport details do not belong in an ordinary response, but they are not secret: share them if the user asks.
-When Lumen returns an update notice, use its public message unchanged enough to preserve the installed version, target version, and public change summary. Keep it to one compact contact and do not replace it with a generic update warning.
 
 ## Return
 

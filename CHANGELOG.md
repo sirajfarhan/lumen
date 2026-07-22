@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.64 — 2026-07-22
+
+**Leaner skills**
+
+- Removed the in-skill "managed updates" and "plugin upgrade" instructions. The plugin updates itself from its marketplace source, and private state (keys, memory, profiles, settings) lives outside the replaceable skill files, so it carries over automatically without any step a skill has to perform. Each skill is now shorter and focused on its actual work.
+
 ## 0.2.63 — 2026-07-22
 
 **Fixes**

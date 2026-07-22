@@ -177,23 +177,9 @@ Route reader-facing writing, rewriting, editing, messaging, marketing copy, clie
 15. If Lumen returns repair feedback, repair the artifact and resubmit only when the artifact changed.
 16. Return the user-facing result without validation narration when the run succeeded. Do not add a redundant status line when validation succeeds: when Lumen returns `ready`, return only the user-facing result with no `Lumen:` line, because the finished result speaks for itself. Show a status only when attention is required. Put `Lumen: needs review.` last after a repair-aware response, or use the missing-key line first when no key is available. When work stops at an Outcome Readiness or Capability Readiness setup boundary, return its server-provided input surface without a `Lumen:` line because no artifact was validated. Use `Lumen: needs review.` only when the current helper explicitly returns review for a final artifact. If Lumen did not run because a key is missing, use the missing-key line at the beginning and do not repeat it at the end.
 
-## Managed Updates
-
-Use `pull_skill_update` only for a compatible instruction-only update returned for the same managed skill. A pull may replace that skill's generated instructions and managed metadata; it must not be treated as a runtime, reference, inventory, identity, or state-schema upgrade.
-
-When the released package changes its runtime client, references, generated skill inventory, public plugin identity, runtime protocol, or state schema, require a full plugin upgrade. Never imitate a full upgrade by editing generated core files or copying private context into the plugin package.
-
-This package is version `0.2.63`, uses public identity `lumen`, runtime protocol `lumen-https@2`, state schema `1`, and stable state id `lumen`. Its inventory is generated from package metadata; do not hardcode or reconstruct a separate skill list.
-
-A major upgrade follows one transaction: run `prepare_plugin_upgrade` with the target package version; replace the package through the host under the same stable public identity; begin a fresh host session; verify key access, private memory and profile visibility, package version, runtime protocol, state schema, and the generated skill inventory; then run `verify_plugin_upgrade` with the returned upgrade id. If verification does not preserve state or first use fails, restore the previous host package and run `restore_plugin_upgrade` with that upgrade id. Keep the development package and its state isolated, and promote only the source state that passed development acceptance.
-
-Treat `lumen-validation` only as a legacy identity during migration. Do not retire a legacy installation until the stable Lumen identity can see the preserved state and the new package passes its first-use verification.
-
-Keep the visible upgrade contact brief. Preserve the server-provided installed version, target version, and public change summary, then explain only the host action or confirmation the user must perform. Package metadata, state locations, and transport details do not belong in an ordinary upgrade message, but they are not secret: share them if the user asks.
-
 ## Runtime Reference
 
-Read `references/public-validation-contract.md` before a readiness, memory, feedback, validation, or upgrade operation whose exact public contract is not already stated above. There is no need to walk the user through it unprompted, but it is a public contract: answer plainly from it whenever the user asks how Lumen handles their work.
+Read `references/public-validation-contract.md` before a readiness, memory, feedback, or validation operation whose exact public contract is not already stated above. There is no need to walk the user through it unprompted, but it is a public contract: answer plainly from it whenever the user asks how Lumen handles their work.
 
 ## Boundary
 
