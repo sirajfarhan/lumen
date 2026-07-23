@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.67 — 2026-07-23
+
+**One readiness system**
+
+- Removed Lumen-owned memory, profile, preference, and feedback storage. Skills now use only the current task and context supplied by the AI harness.
+- Tightened continuous-readiness proofs and specialist evidence checks so a skill can clear a next move or point the agent to a repair without treating validation as a final-only step.
+- Added Concept Visualizer oracle calibration and stronger Writer cold-reader language review.
+- Published the new Lumen overview, the proposed NEAR readiness-review economy, and the approved attention-and-review loop visual with the public marketplace.
+
 ## 0.2.66 — 2026-07-22
 
 **Robustness (from small-model testing)**
@@ -7,6 +16,11 @@
 - Broke the dense Start Boundary instruction block into readable sections, so a smaller or faster model can find the rule that decides how to handle a request instead of missing it in a wall of text.
 - Teaching turns now state what the learner's answer will shape next, so the payoff is visible rather than left implicit.
 - Replaced an abstract Skillsmith teaching example with a plain everyday one (a follow-up note after any meeting), so the first teaching turn cannot lift a jargon-y phrase verbatim.
+- Every skill now defines a clean cold-read boundary: a new isolated reader sees only the exact encounter surface and minimal context, reconstructs it before seeing any rubric, and never receives the intended interpretation, suspected flaw, prior feedback, or creation history.
+- Any material edit now invalidates the cold read and restarts the Lumen and reader loop with a new artifact version and a new reader.
+- Writer now treats an independent cold-reader request as its own final-only role, so the reader can inspect a frozen surface without asking for voice setup or entering the authoring workflow.
+- Writer's cold reader now quotes every consequential phrase that required translation or guessing, names the missing relation, protects legitimate technical language, and proposes the smallest source-safe repair. Generic or overly smooth language remains a surface risk until source-aware voice comparison confirms drift.
+- Cold-reader findings now distinguish blocking and important missing relations from optional implementation detail, so a high-level document is not rejected merely because a curious reader can ask for more.
 
 ## 0.2.65 — 2026-07-22
 

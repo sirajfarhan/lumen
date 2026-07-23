@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "concept-visualizer-oracle-calibration-v1",
+  "readerFamily": "",
+  "modelIdentity": "",
+  "artifactClass": "",
+  "constructIds": [],
+  "taskWordingHash": "",
+  "candidateHashes": [],
+  "inputDelivery": {
+    "state": "pending",
+    "hostImagePath": "",
+    "surfaceObservations": [
+      {
+        "neutralId": "",
+        "observedDimensions": "",
+        "nonSemanticAnchor": ""
+      }
+    ],
+    "mismatch": ""
+  },
+  "blindnessBoundary": {
+    "allowedInputs": [],
+    "forbiddenInputs": []
+  },
+  "checks": {
+    "image_removal": {
+      "state": "pending",
+      "expectedRelation": "",
+      "observedResponse": "",
+      "evidence": ""
+    },
+    "image_swap": {
+      "state": "pending",
+      "expectedRelation": "",
+      "observedResponse": "",
+      "evidence": ""
+    },
+    "order_permutation": {
+      "state": "pending",
+      "expectedRelation": "",
+      "observedResponse": "",
+      "evidence": ""
+    },
+    "semantic_mutation": {
+      "state": "pending",
+      "expectedRelation": "",
+      "observedResponse": "",
+      "evidence": ""
+    },
+    "irrelevant_mutation": {
+      "state": "pending",
+      "expectedRelation": "",
+      "observedResponse": "",
+      "evidence": ""
+    },
+    "defect_localization": {
+      "state": "pending",
+      "expectedRelation": "",
+      "observedResponse": "",
+      "evidence": ""
+    },
+    "abstention": {
+      "state": "pending",
+      "expectedRelation": "",
+      "observedResponse": "",
+      "evidence": ""
+    }
+  },
+  "protectedProperties": [],
+  "mutations": [
+    {
+      "kind": "",
+      "constructAttacked": "",
+      "changedRegionOrRelation": "",
+      "protectedProperties": [],
+      "artifactHash": ""
+    }
+  ],
+  "admission": {
+    "state": "diagnostic",
+    "admissibleConstructIds": [],
+    "failedOrPendingChecks": [],
+    "recalibrateWhen": []
+  },
+  "recordedAt": ""
+}

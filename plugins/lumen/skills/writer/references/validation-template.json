@@ -52,7 +52,7 @@
   "voiceTransfer": {
     "sourceId": "The source grounding ledger id for the active voice evidence.",
     "sourceMode": "attested",
-    "representativeHash": "Bounded hash for an approved private profile or sample. For a direct public sample, use representativeSpan instead and set sourceMode to direct.",
+    "evidenceSummary": "Bounded description of the current or host-provided voice evidence. For a direct public sample, use representativeSpan instead and set sourceMode to direct.",
     "verbatimRequired": false,
     "transferredRelation": "The stance, reasoning order, uncertainty, or landing transferred from the evidence.",
     "recomposedEvidence": []
@@ -63,10 +63,24 @@
     "audienceFit": "Why this path fits the reader's knowledge and effort."
   },
   "independentReview": {
-    "required": false,
-    "reviewer": "For standard, deep, or consequential work, identify the fresh reader who received only the final surface and minimal audience question.",
+    "required": true,
+    "reviewer": "Identify the fresh reader who received only the final surface and minimal audience context.",
     "inputBoundary": "What the reviewer was allowed to see.",
     "reconstruction": "What that reader reconstructed without grounding or creation history.",
+    "decision": "pass"
+  },
+  "languageReview": {
+    "sequence": "unprompted_reconstruction_then_language_review",
+    "clearMeaningEvidence": [
+      {
+        "exactSpan": "An exact consequential span from the current final.",
+        "readerParaphrase": "What the fresh reader understood without borrowing the span's abstract wording.",
+        "relationRecovered": "The actor, action, condition, consequence, referent, or technical function the reader recovered."
+      }
+    ],
+    "translationFindings": [],
+    "surfaceVoiceRisks": [],
+    "technicalTermDecisions": [],
     "decision": "pass"
   },
   "sourceAudit": {

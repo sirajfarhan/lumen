@@ -80,7 +80,7 @@ Reality sharpness asks whether the question will contact the right kind of evide
 
 ## Discovery Set
 
-A full-view inquiry needs enough instruments to avoid mistaking one face for the whole. Begin wide when the starting frame feels too tight. Enter a concrete case when abstraction is smoothing away the work. Add an adversarial move when the favored answer arrives too easily. Map relations when the object changes through interaction. Synthesize when the user needs to see both the object and the path that revealed it.
+A full-view inquiry needs enough instruments to avoid mistaking one face for the whole. Begin wide when the starting frame feels too tight. Enter a concrete case when abstraction is smoothing away the work. Add a serious counterexample when the favored answer arrives too easily. Map relations when the object changes through interaction. Synthesize when the user needs to see both the object and the path that revealed it.
 
 The normal rhythm is:
 

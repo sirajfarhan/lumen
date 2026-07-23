@@ -6,9 +6,15 @@ Current skill version aims to turn an abstract concept into a researched visual 
 
 Revision validation is baseline-relative. The current validator applies the established concept, carrier, prompt, artifact, and audience gates to every durable run. When `iteration_control.mode` is `revision`, `sequence_revision`, or `finalization`, it also requires six separate hard gates: baseline authority, change scope, reference authority, production authority, regression quality, and admission quality.
 
-These gates exist to prevent a familiar failure: the requested detail improves while an approved semantic, spatial, material, or typographic property quietly regresses. A local pass proves only that the packet is structurally reviewable. Server validation must also see a baseline-and-change record plus admission-and-regression evidence for revision packets. Independent artifact inspection remains necessary because neither validator can infer audience understanding from self-authored prose.
+These gates exist to prevent a familiar failure: the requested detail improves while an approved semantic, spatial, material, or typographic property quietly regresses. A deterministic development pass proves only that the packet is structurally reviewable. The installed skill does not ship a second public scoring implementation: runtime validation goes through the bundled Lumen client so the server can assess the exact candidate and return scoped findings. On the first Lumen phase, server validation sees the exact candidate, baseline-and-change record, deterministic regression evidence when available, and independent admission explicitly pending. After that candidate clears Lumen, a fresh viewer supplies independent artifact inspection because neither deterministic checks nor self-authored prose can establish audience understanding. The unchanged candidate then returns to Lumen with admission evidence before a fresh final viewer sees the exact later-Lumen-cleared version. Any visual, prompt, model, or baseline change restarts the loop.
 
 The skill researches only evidence that can change the model. The model must explain what the concept does before any image prompt is written. The visual story uses the fixed house style and the prompt is treated as a writer surface.
+
+The validation argument is construct-centred. `references/oracle-registry.json` binds each theory to the claim being made, the observable evidence that could justify it, the lowest-sufficient oracle, a controlled defect, and the oracle's stopping boundary. A check is inadmissible when it makes a larger claim than its evidence supports. Direct geometry can establish a collision when editable coordinates exist. It cannot establish perceived hierarchy. A meaning reader can reconstruct a story from pixels. It cannot establish factual fidelity without the source. A source-aware reviewer can establish whether a documented road relation survived. It cannot establish whether a cold audience notices the relation first. A real audience task remains the terminal oracle for comprehension, transfer, room-scale use, and taste.
+
+For acceptance runs, keep the five model-reader families separate: perceptual structure, meaning, world law, evidence, and continuity. Each reader record names the active construct ids, exact artifact hash, inputs it was allowed to see, localized evidence, finding or abstention, and calibration state. A family cannot provide acceptance evidence until image removal, image swap, order permutation, semantic mutation, irrelevant mutation, defect localization, and abstention have passed for the construct family being used. Pairwise subjective judgments must survive reversed order. One omnibus cold-reader score, however articulate, is diagnostic only.
+
+Use controlled defects as sensitivity evidence, not as training examples for the final reader. The final reader receives only the unchanged Lumen-cleared surface, minimum audience description, and realistic viewing task. It must never see the expected answer, prompt, semantic-channel ledger, source cards, mutation name, prior critique, or creator rationale. Record real audience testing separately rather than presenting a model persona as a person.
 
 In one-frame mode, the pressure-turn-change movement must meet at one shared visual locus instead of becoming a process strip. If the story genuinely needs several state changes, the sequence branch must create separate images rather than one strip. The selected object or carrier must be common enough to recognize. Every visible trace must have a visible cause. Physical law must make the event intelligible. The scaffold decision must protect structure without creating diagram residue.
 
@@ -30,11 +36,9 @@ The hierarchy check must prove the added layer depends on the root event. The ar
 
 Readiness is the lowest hard gate, not an average. Zero-caveat mode requires clean writer validation, direct image inspection without caveats, and every model gate at the requested target.
 
-## Local Gates
+## Runtime And Development Gates
 
-Run the following local checks after any change that touches the image contract or validator. This includes object choice. It includes physical law. It includes scaffold control. It includes reference calibration.
-
-Submit the artifact to Lumen through the bundled client and let the server assess it:
+For an ordinary installed-skill run, submit the exact artifact and evidence through the bundled client. Lumen is the canonical runtime validator:
 
 ```bash
 node runtime/lumen-client.mjs validate_artifact < packet.json
@@ -42,39 +46,17 @@ node runtime/lumen-client.mjs validate_artifact < packet.json
 
 Lumen returns the findings and a readiness verdict. Repair from that feedback and resubmit when the artifact changes.
 
-For story-reach or articulation-framework updates, also run the level fixture and mutation check.
+The checks below are release-time evidence for people developing this skill. Their source-tree validator, fixtures, mutation harness, and validation argument deliberately stay in the canonical development repository rather than being published as a competing client-side validator. They cannot replace the two Lumen phases, the independent reader, source-aware review, or real-audience testing. Historical `$WORKSPACE/...` paths later in this file record earlier development evidence; an installed run does not need those paths.
 
-Submit the artifact to Lumen through the bundled client and let the server assess it:
-
-```bash
-node runtime/lumen-client.mjs validate_artifact < packet.json
-```
-
-Lumen returns the findings and a readiness verdict. Repair from that feedback and resubmit when the artifact changes.
+For story-reach or articulation-framework updates, run the development level fixture and mutation check.
 
 The fixture should pass. The mutation should fail on root retention, the fifteen percent move-up threshold, and semantic level transfer.
 
-For carrier-law or visual-sequence updates, also run the carrier-law fixture and mutation check.
-
-Submit the artifact to Lumen through the bundled client and let the server assess it:
-
-```bash
-node runtime/lumen-client.mjs validate_artifact < packet.json
-```
-
-Lumen returns the findings and a readiness verdict. Repair from that feedback and resubmit when the artifact changes.
+For carrier-law or visual-sequence updates, also run the development carrier-law fixture and mutation check.
 
 The fixture should pass with `measured_surface` as the selected R-mode for supply-chain fragility. It should also pass with a filled `carrier_law_coherence` object and a one-frame `visual_sequence_architecture` decision. The mutation should fail because it removes the internal law, world-native evidence, and law-bearing cues.
 
-For visual-sequence updates, also run the sequence world-coherence fixture and mutations.
-
-Submit the artifact to Lumen through the bundled client and let the server assess it:
-
-```bash
-node runtime/lumen-client.mjs validate_artifact < packet.json
-```
-
-Lumen returns the findings and a readiness verdict. Repair from that feedback and resubmit when the artifact changes.
+For visual-sequence updates, also run the development sequence world-coherence fixture and mutations.
 
 The sequence fixture should pass. The missing-world-lock mutation should fail only on continuity-dossier fields. The prompt-leak mutation should fail only on the beat prompt that leaks internal control labels. The asset-first fixture should pass. The missing-assets mutation should fail only where the reusable world asset or reference-input plan disappears.
 
@@ -302,7 +284,7 @@ The level-framework prompt and GPT response live at:
 
 ```text
 $WORKSPACE/concept-visualizer-level-framework-prompt-writer-20260629
-$CODEX_HOME/attachments/a1762123-7895-45fb-b3e5-b4d948ec0cdb/pasted-text-1.txt
+[private source attachment recorded in the corresponding test provenance]
 ```
 
 The writer-shaped prompt passed cleanly at 125/125 semantic compression. The resulting framework supports L0 through L5 with L2 as default. It defines level choice as consequence radius rather than detail amount. This file-level update turns that framework into model fields and validator gates. Behavior readiness still requires fresh concept runs that compare the same concept across levels and test automatic level selection.

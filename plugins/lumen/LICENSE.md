@@ -19,7 +19,7 @@ The Plugin runs locally in your agent host. It calls the hosted Lumen service ov
 
 - Requests carry the task evidence needed to evaluate readiness or validate an artifact.
 - **Lumen does not retain submitted content.** It stores aggregate counts of validation requests and nothing else.
-- Durable memory and learning are stored only where you have explicitly approved them, and can be removed on request.
+- Lumen keeps no skill memory, profiles, preferences, or feedback. A compatible agent host may provide its own memory when you enable it there; the Plugin uses only what that host supplies and does not create a second store.
 - Your API key authenticates your account. Keep it secret; you are responsible for use made under it.
 
 Full detail: `references/public-validation-contract.md`, shipped with every skill.

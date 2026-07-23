@@ -18,7 +18,7 @@ Skills are told not to search your workspace before they know what you are askin
 
 Submitted content stays out of storage. What gets recorded is how many checks ran, not what was in them.
 
-Memory is the exception. A preference you explicitly approve gets stored so later runs can use it. Removing it takes one request.
+Lumen keeps no skill memory, profiles, preferences, or feedback. Codex or Claude Code may provide host-owned memory when you enable it there; the skills use only what the host supplies and do not create a second store.
 
 ## Where it goes
 

@@ -776,6 +776,48 @@
     "stock_symbol_residue": []
   },
   "validation": {
+    "oracle_plan": {
+      "registry_schema": "concept-visualizer-oracle-registry-v1",
+      "artifact_hash": "",
+      "active_constructs": [
+        {
+          "construct_id": "",
+          "claim": "",
+          "observable": "",
+          "primary_oracle": "",
+          "controlled_defect": "",
+          "stopping_boundary": "",
+          "evidence_record": ""
+        }
+      ],
+      "reader_family_records": [
+        {
+          "reader_family": "",
+          "construct_ids": [],
+          "allowed_inputs": [],
+          "forbidden_inputs": [],
+          "input_delivery_verified": false,
+          "localized_evidence": [],
+          "finding_or_abstention": "",
+          "calibration": {
+            "image_removal": "pending",
+            "image_swap": "pending",
+            "order_permutation": "pending",
+            "semantic_mutation": "pending",
+            "irrelevant_mutation": "pending",
+            "defect_localization": "pending",
+            "abstention": "pending"
+          }
+        }
+      ],
+      "real_audience_requirement": {
+        "required_for_claims": [],
+        "status": "not_run",
+        "evidence": ""
+      },
+      "lowest_credible_gate": "",
+      "omnibus_score_used": false
+    },
     "gates": {
       "evidence_quality": {
         "score": 0,

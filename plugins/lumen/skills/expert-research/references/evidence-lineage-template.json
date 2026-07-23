@@ -40,7 +40,7 @@
   "leads": [
     {
       "id": "L1",
-      "origin": "<search, graph, API, model association, memory, or reference trail>",
+      "origin": "<search, graph, API, model association, host-provided prior context, or reference trail>",
       "target": "<candidate source or relation>",
       "relation": "SUGGESTS",
       "state": "DISCOVERED",

@@ -1,7 +1,7 @@
 {
   "pluginName": "lumen",
   "canonicalPluginName": "lumen",
-  "packageVersion": "0.2.66",
+  "packageVersion": "0.2.67",
   "publicPluginIdentity": "lumen",
   "target": "prod",
   "harness": "claude-code",
@@ -46,14 +46,14 @@
       "restoreOperation": "restore_plugin_upgrade"
     }
   },
-  "generatedAt": "2026-07-22T05:01:09.270Z",
+  "generatedAt": "2026-07-23T11:00:04.406Z",
   "skillInventory": [
     {
       "id": "lumen",
       "name": "route",
       "dir": "route",
       "role": "orchestrator",
-      "version": "0.2.66",
+      "version": "0.2.67",
       "artifactType": "conversation",
       "syncId": "lumen.skill.claude-code.lumen"
     },
@@ -62,7 +62,7 @@
       "name": "skillsmith",
       "dir": "skillsmith",
       "role": "skill",
-      "version": "0.2.66",
+      "version": "0.2.67",
       "artifactType": "skill-package",
       "syncId": "lumen.skill.claude-code.skillsmith"
     },
@@ -71,61 +71,16 @@
       "name": "writer",
       "dir": "writer",
       "role": "skill",
-      "version": "0.2.66",
+      "version": "0.2.67",
       "artifactType": "writer-bundle",
-      "syncId": "lumen.skill.claude-code.writer",
-      "memoryContracts": {
-        "approvedProfile": {
-          "operation": "capture_lumen_preference",
-          "kind": "preference",
-          "scope": "skill",
-          "access": "private",
-          "sources": [
-            "user"
-          ],
-          "requires": [
-            "current explicit approval proof",
-            "current Writer validation"
-          ]
-        },
-        "approvedPreference": {
-          "operation": "capture_lumen_preference",
-          "kind": "preference",
-          "scope": "skill",
-          "access": "private",
-          "sources": [
-            "user"
-          ],
-          "requires": [
-            "current explicit approval proof",
-            "current Writer validation"
-          ]
-        },
-        "localProfile": {
-          "operation": "store_profile",
-          "scope": "skill",
-          "access": "private",
-          "requires": [
-            "explicit local-only request or controlled migration",
-            "explicitUserApproval: true"
-          ]
-        },
-        "confirmedLearning": {
-          "operation": "capture_lumen_learning",
-          "kind": "learning",
-          "requires": [
-            "transfer_confirmed learning proof",
-            "matching teaching validation"
-          ]
-        }
-      }
+      "syncId": "lumen.skill.claude-code.writer"
     },
     {
       "id": "question-sharpener",
       "name": "question-sharpener",
       "dir": "question-sharpener",
       "role": "skill",
-      "version": "0.2.66",
+      "version": "0.2.67",
       "artifactType": "inquiry-packet",
       "syncId": "lumen.skill.claude-code.question-sharpener"
     },
@@ -134,7 +89,7 @@
       "name": "expert-research",
       "dir": "expert-research",
       "role": "skill",
-      "version": "0.2.66",
+      "version": "0.2.67",
       "artifactType": "research-report",
       "syncId": "lumen.skill.claude-code.expert-research"
     },
@@ -143,7 +98,7 @@
       "name": "concept-visualizer",
       "dir": "concept-visualizer",
       "role": "skill",
-      "version": "0.2.66",
+      "version": "0.2.67",
       "artifactType": "concept-visual-model",
       "syncId": "lumen.skill.claude-code.concept-visualizer"
     },
@@ -152,7 +107,7 @@
       "name": "web-builder",
       "dir": "web-builder",
       "role": "skill",
-      "version": "0.2.66",
+      "version": "0.2.67",
       "artifactType": "web-experience",
       "syncId": "lumen.skill.claude-code.web-builder"
     }

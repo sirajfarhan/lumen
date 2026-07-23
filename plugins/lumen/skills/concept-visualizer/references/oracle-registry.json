@@ -1,0 +1,348 @@
+{
+  "schemaVersion": "concept-visualizer-oracle-registry-v1",
+  "principle": "Choose the lowest-sufficient oracle for the claim. A check may establish only what its observable evidence can support.",
+  "oracleFamilies": {
+    "direct_structure": {
+      "useWhen": "Editable geometry, text metadata, colours, identifiers, hashes, or declared channels are directly available.",
+      "mayEstablish": ["coordinates", "distances", "overlaps", "margins", "font metadata", "contrast", "asset identity", "declared channel reuse", "citation presence"],
+      "mustNotEstablish": ["perceived hierarchy", "meaning", "story reconstruction", "aesthetic harmony", "audience transfer"]
+    },
+    "perceptual_structure_reader": {
+      "sees": ["final raster", "target viewing size"],
+      "judges": ["attention order", "grouping", "alignment", "spacing", "collision", "legibility", "competing detail"],
+      "mustReturn": ["ordered regions", "localized finding", "confidence or abstention"],
+      "mustNotSee": ["intended story answer", "creator rationale"]
+    },
+    "meaning_reader": {
+      "sees": ["final raster", "minimum audience description"],
+      "judges": ["one movement", "semantic channel reading", "story reach", "nearest-wrong story", "usable landing"],
+      "mustReturn": ["reconstructed story", "strongest competing reading", "visible evidence", "confidence or abstention"],
+      "mustNotSee": ["semantic channel ledger", "prompt", "source cards"]
+    },
+    "world_law_reader": {
+      "sees": ["final raster", "short carrier name when necessary"],
+      "judges": ["carrier fit", "world law", "physical plausibility", "spatial reachability"],
+      "mustReturn": ["governing law", "law-bearing evidence", "localized violation or abstention"],
+      "mustNotSee": ["creator explanation of how the world is supposed to work"]
+    },
+    "evidence_reader": {
+      "sees": ["final raster", "source reference", "must-survive and may-change contract"],
+      "judges": ["factual fidelity", "claim-to-source relation", "citation role", "allowed presentation change"],
+      "mustReturn": ["surviving facts", "factual mismatch", "unsupported inference", "confidence or abstention"],
+      "mustNotInfer": ["facts absent from both source and artifact"]
+    },
+    "continuity_reader": {
+      "sees": ["baseline or ordered set", "candidate", "protected properties", "requested delta"],
+      "judges": ["intent preservation", "same-world coherence", "identity continuity", "declared state change"],
+      "mustReturn": ["requested change", "protected-property regressions", "localized evidence", "confidence or abstention"],
+      "mustNotReplace": ["direct asset hashes", "editable-object diffs"]
+    },
+    "audience_task": {
+      "sees": ["final reader-facing surface under realistic viewing conditions"],
+      "judges": ["timed reconstruction", "comprehension", "confidence", "near-case application", "error pattern", "presentation-scale usability"],
+      "role": "terminal oracle for claims about real audience understanding or transfer"
+    }
+  },
+  "producerKinds": {
+    "host_direct": {
+      "requiredInputs": ["exact artifact identity", "declared observable", "available editable data or deterministic transformation"],
+      "evidenceRecord": ["producer", "operation", "input hashes", "localized observation", "result", "stopping boundary"],
+      "acceptanceBoundary": "May establish only directly measured or transformed properties. It cannot infer meaning, preference, comprehension, or factual truth."
+    },
+    "model_reader": {
+      "requiredInputs": ["exact reader-facing surface", "narrow task wording", "current calibration record for this reader and construct family"],
+      "evidenceRecord": ["reader family", "model identity when known", "artifact hashes", "task hash", "localized finding or abstention", "calibration state", "stopping boundary"],
+      "acceptanceBoundary": "Admissible only for the calibrated construct family. It cannot stand in for a source-aware expert or real audience."
+    },
+    "controlled_transform": {
+      "requiredInputs": ["exact baseline artifact", "one construct-targeted mutation", "protected properties", "expected observable response"],
+      "evidenceRecord": ["transformation", "baseline and mutation hashes", "changed region or relation", "protected properties", "observed sensitivity", "stopping boundary"],
+      "acceptanceBoundary": "Establishes sensitivity to one controlled change, not overall visual quality or audience success."
+    },
+    "domain_reviewer": {
+      "requiredInputs": ["exact candidate", "qualified source or domain reference", "must-survive and may-change contract"],
+      "evidenceRecord": ["reviewer or source qualification", "candidate and source identity", "surviving facts", "mismatches", "unsupported inference", "stopping boundary"],
+      "acceptanceBoundary": "May establish bounded domain or source fidelity. It cannot establish cold-viewer salience, comprehension, or preference."
+    },
+    "real_audience": {
+      "requiredInputs": ["final reader-facing surface", "defined audience", "realistic viewing condition", "task and success criterion"],
+      "evidenceRecord": ["audience and sample", "viewing condition", "task", "response", "error pattern", "confidence", "stopping boundary"],
+      "acceptanceBoundary": "Supports only the tested audience, surface, condition, and task. A model persona is not a real audience."
+    }
+  },
+  "oracleProducers": {
+    "asset_hash": {"kind": "host_direct", "operation": "Hash the exact asset bytes and compare declared identities."},
+    "audience_task": {"kind": "real_audience", "operation": "Run the defined reconstruction, comprehension, transfer, or viewing task with the intended audience."},
+    "channel_swap_mutation": {"kind": "controlled_transform", "operation": "Swap two declared semantic-channel owners while preserving unrelated presentation properties."},
+    "clutter_risk_proxy": {"kind": "host_direct", "operation": "Measure declared element density or competing-region load and report it only as a risk proxy."},
+    "colour_removal": {"kind": "controlled_transform", "operation": "Remove or neutralize colour while preserving geometry and test whether the required distinction survives."},
+    "competitive_semantic_mutation": {"kind": "controlled_transform", "operation": "Strengthen the nearest wrong story without changing overall polish."},
+    "consequence_cue_mutation": {"kind": "controlled_transform", "operation": "Remove the cue that carries what happens next while protecting the root event."},
+    "continuity_reader": {"kind": "model_reader", "operation": "Compare baseline or ordered set with the candidate and localize requested change and protected-property regressions."},
+    "direct_structure": {"kind": "host_direct", "operation": "Inspect available coordinates, text metadata, colour values, identifiers, hashes, or declared channels."},
+    "domain_expert": {"kind": "domain_reviewer", "operation": "Apply the explicit domain or source contract to the candidate and localize consequential mismatches."},
+    "evidence_reader": {"kind": "model_reader", "operation": "Compare candidate, source reference, and must-survive or may-change contract; abstain when source support is absent."},
+    "generation_behaviour_test": {"kind": "controlled_transform", "operation": "Ablate one prompt field, regenerate under the same declared conditions, and compare the predicted behavior change."},
+    "localized_diff_proxy": {"kind": "host_direct", "operation": "Measure change concentration inside and outside declared regions without assigning semantic meaning."},
+    "meaning_reader": {"kind": "model_reader", "operation": "Reconstruct one movement, strongest competing reading, visible evidence, and usable landing from the final surface."},
+    "ocr_box_warning": {"kind": "host_direct", "operation": "Inspect OCR boxes and confidence for possible clipping, collision, or unreadable text; report warnings rather than comprehension."},
+    "oracle_specific_evidence": {"kind": "host_direct", "operation": "Attach evidence produced by the selected primary oracle using that producer kind's canonical record."},
+    "perceptual_structure_reader": {"kind": "model_reader", "operation": "Return attention order, grouping, alignment, spacing, collisions, legibility, and localized competing detail."},
+    "region_relation_proxy": {"kind": "host_direct", "operation": "Compare declared region-to-region geometry or topology and report only the measured relation."},
+    "region_similarity_proxy": {"kind": "host_direct", "operation": "Compare protected regions for structural or perceptual similarity without claiming identity or meaning."},
+    "saliency_risk_proxy": {"kind": "host_direct", "operation": "Estimate likely attention competition and report it as a risk proxy rather than narrative hierarchy."},
+    "semantic_mutation": {"kind": "controlled_transform", "operation": "Change one story-bearing cue while preserving unrelated presentation properties."},
+    "style_metadata_proxy": {"kind": "host_direct", "operation": "Compare declared style metadata across an ordered set without claiming world coherence by itself."},
+    "timed_first_glance": {"kind": "real_audience", "operation": "Expose the surface for a bounded interval and record the first region or relation noticed."},
+    "world_law_reader": {"kind": "model_reader", "operation": "State the governing carrier law, its visible evidence, and any localized physical or spatial violation."}
+  },
+  "readerCalibration": {
+    "requiredBeforeAcceptanceUse": [
+      "image_removal",
+      "image_swap",
+      "order_permutation",
+      "semantic_mutation",
+      "irrelevant_mutation",
+      "defect_localization",
+      "abstention"
+    ],
+    "acceptanceRule": "A model reader is admissible only for construct families whose seeded defect it detects, whose harmless mutation it ignores, and whose finding remains stable under input-order reversal.",
+    "subjectiveComparisonRule": "Prefer pairwise candidate-versus-baseline comparison with a localized reason and reversed order. Do not treat an absolute aesthetic score as acceptance evidence."
+  },
+  "constructs": [
+    {
+      "id": "one_movement",
+      "claim": "A cold viewer can state the single change, tension, or relation.",
+      "observable": "The reconstructed story names one governing movement from the pixels.",
+      "primaryOracle": "meaning_reader",
+      "supportingOracles": ["semantic_mutation"],
+      "controlledDefect": "remove or replace the pivotal relation",
+      "stoppingBoundary": "Keyword overlap or title recovery cannot establish story reconstruction."
+    },
+    {
+      "id": "semantic_channel_ownership",
+      "claim": "Each visible channel is read as its intended story role without leaking to another role.",
+      "observable": "A blind reader assigns colour, texture, form, position, or motion to the intended owner.",
+      "primaryOracle": "meaning_reader",
+      "supportingOracles": ["direct_structure", "channel_swap_mutation", "colour_removal"],
+      "controlledDefect": "swap two story-bearing channels or duplicate one across conflicting roles",
+      "stoppingBoundary": "Palette consistency cannot establish semantic assignment."
+    },
+    {
+      "id": "salience_hierarchy",
+      "claim": "Attention lands first, second, and third where the story requires.",
+      "observable": "The reader returns the intended ordered regions at presentation size.",
+      "primaryOracle": "perceptual_structure_reader",
+      "supportingOracles": ["saliency_risk_proxy", "timed_first_glance"],
+      "controlledDefect": "strengthen a secondary region or weaken the primary region",
+      "stoppingBoundary": "Size, saturation, or saliency alone cannot establish narrative importance."
+    },
+    {
+      "id": "perceptual_grouping",
+      "claim": "Perceived groups match the intended conceptual groups.",
+      "observable": "The reader marks groups before explaining their meaning.",
+      "primaryOracle": "perceptual_structure_reader",
+      "supportingOracles": ["direct_structure"],
+      "controlledDefect": "move one item across a common region or proximity boundary",
+      "stoppingBoundary": "Distance thresholds alone cannot establish grouping in a competing layout."
+    },
+    {
+      "id": "alignment_spacing_overlap",
+      "claim": "The final surface is aligned, evenly spaced, and collision-free at presentation scale.",
+      "observable": "Direct geometry passes when available and the raster reader finds no visible drift or collision.",
+      "primaryOracle": "direct_structure",
+      "supportingOracles": ["perceptual_structure_reader", "ocr_box_warning"],
+      "controlledDefect": "offset one repeated item, compress one gap, or introduce a collision",
+      "stoppingBoundary": "Raster measurements are warnings when editable geometry is unavailable."
+    },
+    {
+      "id": "typography_legibility",
+      "claim": "Text is readable at the intended size and its hierarchy is coherent.",
+      "observable": "OCR, contrast, font metadata, and simulated viewing all support comfortable reading.",
+      "primaryOracle": "direct_structure",
+      "supportingOracles": ["perceptual_structure_reader", "audience_task"],
+      "controlledDefect": "reduce one key label below the reading floor or collapse type hierarchy",
+      "stoppingBoundary": "OCR success alone cannot establish projected comfort."
+    },
+    {
+      "id": "perceptual_colour_accessibility",
+      "claim": "Required distinctions survive contrast loss, colour-vision differences, and monochrome.",
+      "observable": "The same distinction remains recoverable under deterministic transformations.",
+      "primaryOracle": "direct_structure",
+      "supportingOracles": ["meaning_reader"],
+      "controlledDefect": "remove the non-colour cue or collapse contrast",
+      "stoppingBoundary": "A generic aesthetic reader cannot establish accessibility."
+    },
+    {
+      "id": "semantic_colour_assignment",
+      "claim": "Viewers infer the intended meaning of colours rather than only noticing difference.",
+      "observable": "A blind reader maps colours to the intended concepts before labels are revealed.",
+      "primaryOracle": "meaning_reader",
+      "supportingOracles": ["audience_task"],
+      "controlledDefect": "swap semantically opposed colours while preserving contrast",
+      "stoppingBoundary": "Contrast or colour distance cannot establish meaning."
+    },
+    {
+      "id": "coherence_signalling_contiguity",
+      "claim": "Mutually explanatory text and visuals are encountered together while decoration stays subordinate.",
+      "observable": "The reader links each explanation to its intended visual region without search.",
+      "primaryOracle": "perceptual_structure_reader",
+      "supportingOracles": ["direct_structure", "meaning_reader"],
+      "controlledDefect": "separate one explanatory label from its object or strengthen decoration",
+      "stoppingBoundary": "Whitespace percentage or element count cannot establish coherence."
+    },
+    {
+      "id": "cognitive_load_density",
+      "claim": "The intended relation is recovered without excessive search or competing detail.",
+      "observable": "A timed reconstruction succeeds and competing regions are localized.",
+      "primaryOracle": "audience_task",
+      "supportingOracles": ["perceptual_structure_reader", "clutter_risk_proxy"],
+      "controlledDefect": "add plausible but story-irrelevant detail near the primary path",
+      "stoppingBoundary": "Minimal appearance or one clutter score cannot establish comprehension effort."
+    },
+    {
+      "id": "story_reach",
+      "claim": "The visual reaches the declared consequence level without claiming a farther level.",
+      "observable": "A blind reader states what happens next and why at the declared reach.",
+      "primaryOracle": "meaning_reader",
+      "supportingOracles": ["consequence_cue_mutation"],
+      "controlledDefect": "remove the consequence-bearing cue",
+      "stoppingBoundary": "Object detection or caption similarity cannot establish reach."
+    },
+    {
+      "id": "concreteness_abstraction",
+      "claim": "The representation makes the mechanism recognizable while allowing transfer beyond its surface.",
+      "observable": "The viewer names the mechanism and applies it to a changed case.",
+      "primaryOracle": "audience_task",
+      "supportingOracles": ["meaning_reader"],
+      "controlledDefect": "add irrelevant concrete detail or remove the mechanism-bearing cue",
+      "stoppingBoundary": "Detail amount alone cannot establish abstraction quality or transfer."
+    },
+    {
+      "id": "carrier_choice",
+      "claim": "The selected world naturally exposes the governing relation better than its nearest alternative.",
+      "observable": "A pairwise reader identifies which carrier makes the required inference easier and why.",
+      "primaryOracle": "meaning_reader",
+      "supportingOracles": ["world_law_reader"],
+      "controlledDefect": "replace the carrier with a visually attractive world whose native reading competes with the target",
+      "stoppingBoundary": "Style preference or prompt adherence cannot establish carrier fit."
+    },
+    {
+      "id": "carrier_law",
+      "claim": "The visual obeys the causal rules of its chosen world.",
+      "observable": "The reader identifies one governing law and world-native evidence without illegal cues.",
+      "primaryOracle": "world_law_reader",
+      "supportingOracles": ["direct_structure"],
+      "controlledDefect": "seed impossible flow, contradictory affordance, or inconsistent scale",
+      "stoppingBoundary": "A generic plausibility score cannot establish a scene-specific law."
+    },
+    {
+      "id": "target_law_nearest_wrong_story",
+      "claim": "The target mechanism is more available than the strongest plausible misreading.",
+      "observable": "One reader reconstructs the story and another independently names the strongest wrong reading.",
+      "primaryOracle": "meaning_reader",
+      "supportingOracles": ["competitive_semantic_mutation"],
+      "controlledDefect": "strengthen the known wrong reading while preserving surface polish",
+      "stoppingBoundary": "An informed judge answering whether the intention is clear is self-confirming."
+    },
+    {
+      "id": "physical_spatial_reachability",
+      "claim": "Paths, crossings, barriers, reflections, flows, and actions could occur as shown.",
+      "observable": "A scene-specific reader or domain expert can trace a feasible path or action.",
+      "primaryOracle": "world_law_reader",
+      "supportingOracles": ["direct_structure", "domain_expert"],
+      "controlledDefect": "break a path, reverse an impossible flow, or introduce an inaccessible crossing",
+      "stoppingBoundary": "A generic multimodal model alone is insufficient for consequential infrastructure or safety facts."
+    },
+    {
+      "id": "evidence_visibility_citation_subordination",
+      "claim": "Evidence is findable and readable without becoming the main story or rescuing an unsupported claim.",
+      "observable": "A source-aware reader finds the claim link while a cold reader still follows the visual story first.",
+      "primaryOracle": "evidence_reader",
+      "supportingOracles": ["direct_structure", "perceptual_structure_reader"],
+      "controlledDefect": "enlarge the citation layer or detach a claim from its source",
+      "stoppingBoundary": "Citation presence cannot establish support or subordination."
+    },
+    {
+      "id": "factual_reference_fidelity",
+      "claim": "Case-defining source relations survive reconstruction while allowed presentation properties may change.",
+      "observable": "A side-by-side reviewer applies an explicit must-survive and may-change contract.",
+      "primaryOracle": "evidence_reader",
+      "supportingOracles": ["domain_expert", "region_relation_proxy"],
+      "controlledDefect": "alter one case-defining relation while preserving style",
+      "stoppingBoundary": "Pixel or embedding similarity cannot establish factual fidelity."
+    },
+    {
+      "id": "iteration_intent_preservation",
+      "claim": "The requested change occurred while protected properties remained stable.",
+      "observable": "A baseline-aware reader localizes the delta and any protected-property regression.",
+      "primaryOracle": "continuity_reader",
+      "supportingOracles": ["direct_structure", "localized_diff_proxy"],
+      "controlledDefect": "change one protected property outside the requested region",
+      "stoppingBoundary": "Whole-image similarity cannot establish preservation of a named property."
+    },
+    {
+      "id": "frame_sequence_necessity",
+      "claim": "One frame carries the relation, or each additional frame earns a necessary state change.",
+      "observable": "Ordered reading succeeds and shuffling changes or destroys the recovered sequence.",
+      "primaryOracle": "continuity_reader",
+      "supportingOracles": ["meaning_reader"],
+      "controlledDefect": "duplicate a beat, remove a state change, or shuffle order",
+      "stoppingBoundary": "Frame count or caption continuity cannot establish necessity."
+    },
+    {
+      "id": "asset_first_sequence_continuity",
+      "claim": "Entities, world, perspective, and semantic channels persist while only the declared state changes.",
+      "observable": "The reader localizes identity continuity and the declared delta across frames.",
+      "primaryOracle": "continuity_reader",
+      "supportingOracles": ["asset_hash", "region_similarity_proxy"],
+      "controlledDefect": "swap an entity, channel, perspective, or world asset in one beat",
+      "stoppingBoundary": "Global similarity or a shared seed cannot establish narrative continuity."
+    },
+    {
+      "id": "prompt_contract",
+      "claim": "The prompt contains the information needed to generate the intended function, hierarchy, and constraints.",
+      "observable": "Required fields are present and field ablation produces the predicted visual degradation.",
+      "primaryOracle": "direct_structure",
+      "supportingOracles": ["generation_behaviour_test"],
+      "controlledDefect": "remove one mechanism-bearing prompt field",
+      "stoppingBoundary": "A well-formed prompt without a rendered result cannot establish generation behaviour."
+    },
+    {
+      "id": "same_world_coherence",
+      "claim": "An ordered visual set feels authored in one world while meaningful differences remain visible.",
+      "observable": "A baseline-aware pairwise reader recovers shared world laws and case-specific differences from a contact sheet.",
+      "primaryOracle": "continuity_reader",
+      "supportingOracles": ["style_metadata_proxy"],
+      "controlledDefect": "change one surface's perspective, texture law, typography, or channel semantics",
+      "stoppingBoundary": "An isolated surface or one style-similarity score cannot establish coherence across an ordered visual set."
+    },
+    {
+      "id": "aesthetic_harmony",
+      "claim": "Among meaning- and evidence-safe candidates, one has better balance, rhythm, tension, and finish.",
+      "observable": "Pairwise preference remains stable under order reversal and includes a localized reason.",
+      "primaryOracle": "audience_task",
+      "supportingOracles": ["perceptual_structure_reader"],
+      "controlledDefect": "seed one localized rhythm, balance, or finish defect",
+      "stoppingBoundary": "An absolute model score or a vote from near-identical model judges cannot establish taste."
+    },
+    {
+      "id": "reader_encounter_transfer",
+      "claim": "The intended audience can recover, use, and transfer the visual under realistic conditions.",
+      "observable": "Timed reconstruction, confidence, near-case application, and error coding succeed.",
+      "primaryOracle": "audience_task",
+      "supportingOracles": ["meaning_reader"],
+      "controlledDefect": "remove the relation needed for near-case application",
+      "stoppingBoundary": "No internal validator can establish real audience transfer."
+    },
+    {
+      "id": "readiness_aggregation",
+      "claim": "No critical construct is hidden by strength elsewhere.",
+      "observable": "Every selected hard gate clears and the lowest credible gate controls readiness.",
+      "primaryOracle": "direct_structure",
+      "supportingOracles": ["oracle_specific_evidence"],
+      "controlledDefect": "seed one failed hard gate into an otherwise strong packet",
+      "stoppingBoundary": "A composite or average score cannot establish readiness."
+    }
+  ]
+}

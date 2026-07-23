@@ -5,10 +5,10 @@
   "syncId": "lumen.skill.claude-code.question-sharpener",
   "skillId": "question-sharpener",
   "name": "question-sharpener",
-  "version": "0.2.66",
-  "sourceHash": "lph_c7b2a816",
-  "packageVersion": "0.2.66",
-  "publicChangeSummary": "Robustness fixes from testing skills with smaller models: the dense Start Boundary is now broken into readable sections so the routing rules are easy to find, teaching turns now state what your answer shapes, and the Skillsmith teaching example is a plain everyday one instead of an abstract phrase.",
+  "version": "0.2.67",
+  "sourceHash": "lph_941f66cf",
+  "packageVersion": "0.2.67",
+  "publicChangeSummary": "Lumen now keeps memory and preferences in the AI harness rather than a second Lumen store, strengthens continuous readiness and specialist evidence checks, and publishes the attention-and-readiness model with its proposed NEAR review economy.",
   "runtimeProtocol": {
     "id": "lumen-https",
     "version": 2,
@@ -20,5 +20,5 @@
   "legacyIdentityAliases": [
     "lumen-validation"
   ],
-  "updatedAt": "2026-07-22T05:01:09.262Z"
+  "updatedAt": "2026-07-23T11:00:04.398Z"
 }

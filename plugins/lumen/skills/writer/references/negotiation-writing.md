@@ -141,7 +141,7 @@ When a draft relies on pressure, repair the underlying structure before softenin
 - **Unconditional concession**: tie it to a reciprocal commitment.
 - **Character accusation**: translate it into observable facts, allocation, broken sequence, or consequence.
 - **Artificial urgency**: remove it and name the real clock, if one exists.
-- **Hostile boundary**: state what the sender will do, when that state changes, and what choice remains available.
+- **Firm boundary**: state what the sender will do, when that state changes, and what choice remains available.
 - **Mission pressure**: keep the shared vision as motivation, but let concrete commitment govern access to the next stage.
 - **Repeated fairness language**: show the two protections once and let the reader judge.
 

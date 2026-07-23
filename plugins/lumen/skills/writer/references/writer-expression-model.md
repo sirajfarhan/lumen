@@ -148,7 +148,7 @@ Interaction burden is reader burden. A form-heavy surface can contradict gentle 
 
 Do a visible-copy voice read on every interface. Read the first visible promise and the words the reader has to touch without looking at the grounding. If those words sound like generic product-category voice, they are not carrying the user's voice yet. Repair by returning to the source mechanism and the user's plain wording.
 
-Make the visible-copy read adversarial enough to matter. First ask what a skeptical cold reader would call generic, too smooth, or app-like. Then ask what concrete source mechanism the words make easier to feel or do. Treat positive source mechanism as the proof of voice. A page can avoid scores, streaks, and goals while still sounding like a soft product demo. Acceptance needs a positive mechanism in the touchable words.
+Make the visible-copy review demanding enough to matter. First ask what a skeptical cold reader would call generic, too smooth, or app-like. Then ask what concrete source mechanism the words make easier to feel or do. Treat positive source mechanism as the proof of voice. A page can avoid scores, streaks, and goals while still sounding like a soft product demo. Acceptance needs a positive mechanism in the touchable words.
 
 Be careful with imported embodied agency. If the source says someone keeps returning to a movement, do not quietly turn that into the body choosing unless the source gave that frame. The body-language version can sound intimate and polished while making the mechanism less plain. Use it only when the source pressure actually lives there.
 
@@ -244,7 +244,7 @@ Use the run log when Writer behavior is being measured. The useful signal is not
 
 Use the regeneration test when compression feels uncertain. Read the line alone and infer its likely reader movement. If the intended movement disappears, the line is underwritten. If the reader can infer many wrong things, the line is vague. If the line merely names pieces, it has not found the relation yet.
 
-Use the inference audit when a draft feels persuasive in a suspicious way. Name what the reader is being asked to feel, then find the source fact or relation that warrants that feeling. If the warrant is missing, the repair is not prettier language. Add the fact, soften the implication, or cut the move.
+Use the inference audit when a draft feels more persuasive than its evidence warrants. Name what the reader is being asked to feel, then find the source fact or relation that warrants that feeling. If the warrant is missing, the repair is not prettier language. Add the fact, soften the implication, or cut the move.
 
 Use the attention-leak audit when the draft seems correct but the user would feel argued with instead of answered. Name the accepted question. Name the side frame the draft introduced. If the side frame is not source-warranted, remove it. If evidence makes it critical or a hard safety boundary requires it, keep only the part that changes the answer.
 
